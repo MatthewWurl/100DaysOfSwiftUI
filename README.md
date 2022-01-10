@@ -5,7 +5,12 @@ These projects were built for iOS 15 with Xcode 13.
 
 ## List of Projects
 ### Starting SwiftUI
-- [ ] Project 1 [Days 16 - 18]
+- [x] [Project 1 - WeSplit](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/01-Project-1-WeSplit) [Days 16 - 18]
+<div>
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Project%201%20-%20Challenge%201.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Project%201%20-%20Challenge%202.png" width="250">
+</div>
+
 - [ ] Project 2 [Days 20 - 22]
 - [ ] Project 3 [Days 23 - 24]
 ### Expanding your skills

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-<<<<<<< HEAD
     @State private var checkAmount = 0.0
     @State private var numberOfPeople = 2
     @State private var tipPercentage = 20
@@ -86,24 +85,15 @@ struct ContentView: View {
                 }
             }
         }
-=======
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
->>>>>>> 6eb3fc545fcbf1e5ab9824c388815b0b3ec48eff
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-<<<<<<< HEAD
         // @FocusState crashes XCode when used in top-level View...
         // Embedding in a ZStack fixes the issue.
         ZStack {
             ContentView()
         }
-=======
-        ContentView()
->>>>>>> 6eb3fc545fcbf1e5ab9824c388815b0b3ec48eff
     }
 }

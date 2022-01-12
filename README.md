@@ -11,6 +11,12 @@ These projects were built for iOS 15 with Xcode 13.
   <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Project%201%20-%20Challenge%202.png" width="250">
 </div>
 
+- [x] [Challenge Day](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/02-Challenge) [Day 19]
+<div>
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/02-Challenge/Screenshots/Challenge%20Day%20-%201.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/02-Challenge/Screenshots/Challenge%20Day%20-%202.png" width="250">
+</div>
+
 - [ ] Project 2 [Days 20 - 22]
 - [ ] Project 3 [Days 23 - 24]
 ### Expanding your skills

@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var inputNum: Double?
-    @State var inputUnits: UnitLength = .meters
-    @State var outputUnits: UnitLength = .feet
+    @State private var inputNum: Double?
+    @State private var inputUnits: UnitLength = .meters
+    @State private var outputUnits: UnitLength = .feet
+    @FocusState private var inputNumIsFocused: Bool
     
     var outputNum: Double? {
         guard let inputNum = inputNum else { return nil }
@@ -53,6 +54,7 @@ struct ContentView: View {
                 Section {
                     TextField("Enter a number", value: $inputNum, format: .number)
                         .keyboardType(.decimalPad)
+                        .focused($inputNumIsFocused)
                 } header: {
                     Text("Input number")
                 }
@@ -65,12 +67,23 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Unit Conversion")
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    
+                    Button("Done") {
+                        inputNumIsFocused = false
+                    }
+                }
+            }
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ZStack {
+            ContentView()
+        }
     }
 }

@@ -1,23 +1,17 @@
 # 100DaysOfSwiftUI
 This repository includes all of the projects from Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) course.
 
+I have done all of the optional challenges as well (You can find this information inside the project directories).
+
 These projects were built for iOS 15 with Xcode 13.
+
+***(Note: Screenshots are included in the respective project directories.)***
 
 ## List of Projects
 ### Starting SwiftUI
 - [x] [Project 1 - WeSplit](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/01-Project-1-WeSplit) [Days 16 - 18]
-<div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Project%201%20-%20Challenge%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Project%201%20-%20Challenge%202.png" width="250">
-</div>
-
 - [x] [Challenge Day](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/02-Challenge) [Day 19]
-<div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/02-Challenge/Screenshots/Challenge%20Day%20-%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/02-Challenge/Screenshots/Challenge%20Day%20-%202.png" width="250">
-</div>
-
-- [ ] Project 2 [Days 20 - 22]
+- [x] [Project 2 - Guess the Flag](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/03-Project-2-GuessTheFlag) [Days 20 - 22]
 - [ ] Project 3 [Days 23 - 24]
 ### Expanding your skills
 - [ ] Project 4 [Days 26 - 28]

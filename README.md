@@ -12,7 +12,7 @@ These projects were built for iOS 15 with Xcode 13.
 - [x] [Project 1 - WeSplit](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/01-Project-1-WeSplit) [Days 16 - 18]
 - [x] [Challenge Day](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/02-Challenge) [Day 19]
 - [x] [Project 2 - Guess the Flag](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/03-Project-2-GuessTheFlag) [Days 20 - 22]
-- [ ] Project 3 [Days 23 - 24]
+- [x] [Project 3 - Views and Modifiers](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/04-Project-3-ViewsAndModifiers) [Days 23 - 24]
 ### Expanding your skills
 - [ ] Project 4 [Days 26 - 28]
 - [ ] Project 5 [Days 29 - 31]

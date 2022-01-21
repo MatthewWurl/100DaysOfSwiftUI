@@ -14,9 +14,9 @@ These projects were built for iOS 15 with Xcode 13.
 - [x] [Project 2 - Guess the Flag](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/03-Project-2-GuessTheFlag) [Days 20 - 22]
 - [x] [Project 3 - Views and Modifiers](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/04-Project-3-ViewsAndModifiers) [Days 23 - 24]
 ### Consolidation II
-- [ ] Milestone: Projects 1-3 [Day 25]
+- [x] [Milestone: Projects 1-3](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/05-Milestone-Project-RockPaperScissorsBrainGame) [Day 25]
 ### Expanding your skills
-- [ ] Project 4 [Days 26 - 28]
+- [x] [Project 4 - BetterRest](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/06-Project-4-BetterRest) [Days 26 - 28]
 - [ ] Project 5 [Days 29 - 31]
 - [ ] Project 6 [Days 32 - 34]
 ### Consolidation III

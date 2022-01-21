@@ -87,7 +87,7 @@ struct ContentView: View {
                         Text("Your final score is \(score).")
                     }
             }
-            .foregroundColor(.white)
+            .foregroundColor(.primary)
             .padding()
         }
     }

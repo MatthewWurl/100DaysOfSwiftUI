@@ -48,7 +48,7 @@ struct ContentView: View {
                             Spacer()
                             Text("+\(wordLengthValues[word.count] ?? 0)")
                         }
-                        .foregroundColor(word.count == 7 ? .green : .primary)
+                        .foregroundColor(word.count == 8 ? .green : .primary)
                     }
                 }
             }

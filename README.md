@@ -1,4 +1,8 @@
 # 100DaysOfSwiftUI
+<div align="center">
+  <img src="https://i.ytimg.com/vi/AWZzEGwkenQ/maxresdefault.jpg" width="720">
+</div>
+
 This repository includes all of the projects from Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) course.
 
 I have done all of the optional challenges as well (You can find this information inside the project directories).

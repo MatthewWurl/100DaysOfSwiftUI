@@ -18,7 +18,7 @@ These projects were built for iOS 15 with Xcode 13.
 ### Expanding your skills
 - [x] [Project 4 - BetterRest](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/06-Project-4-BetterRest) [Days 26 - 28]
 - [x] [Project 5 - Word Scramble](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/07-Project-5-WordScramble) [Days 29 - 31]
-- [ ] Project 6 [Days 32 - 34]
+- [x] [Project 6 - Animations](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/08-Project-6-Animations) [Days 32 - 34]
 ### Consolidation III
 - [ ] Milestone: Projects 4-6 [Day 35]
 ### Scaling up to bigger apps

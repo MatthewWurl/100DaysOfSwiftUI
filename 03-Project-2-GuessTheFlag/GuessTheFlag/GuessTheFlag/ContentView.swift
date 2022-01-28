@@ -18,6 +18,11 @@ struct ContentView: View {
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var score = 0
     
+    // Project 6 challenge variables
+    @State private var isAnimatingOpacity = false
+    @State private var rotationAmount = 0.0
+    @State private var scaleAmount: CGFloat = 1.0
+    
     let questionAmount = 8
     
     var body: some View {
@@ -54,6 +59,18 @@ struct ContentView: View {
                             flagTapped(number)
                         } label: {
                             FlagImage(of: countries[number])
+                            // Project 6 challenge
+                            // Change opacity of incorrect flags to 0.25
+                                .opacity(isAnimatingOpacity ?
+                                         (number == correctAnswer ? 1 : 0.25) : 1)
+                            // Rotate selected answer 360-degrees on Y-axis
+                                .rotation3DEffect(
+                                    .degrees(number == selectedAnswer ? rotationAmount : 0),
+                                    axis: (x: 0, y: 1, z: 0))
+                            // Scale incorrect answers to 0.5
+                                .scaleEffect(
+                                    number == correctAnswer ? 1 : scaleAmount,
+                                    anchor: .center)
                         }
                     }
                 }
@@ -95,6 +112,16 @@ struct ContentView: View {
         
         selectedAnswer = number
         
+        // Project 6 challenge
+        withAnimation(.easeInOut) {
+            isAnimatingOpacity = true
+        }
+        
+        withAnimation {
+            rotationAmount = 360
+            scaleAmount = 0.5
+        }
+        
         isShowingScore = true
     }
     
@@ -106,6 +133,11 @@ struct ContentView: View {
             countries.shuffle()
             correctAnswer = Int.random(in: 0...2)
         }
+        
+        // Project 6 challenge
+        isAnimatingOpacity = false
+        rotationAmount = 0.0
+        scaleAmount = 1.0
     }
     
     func resetGame() {

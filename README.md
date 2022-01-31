@@ -26,7 +26,7 @@ These projects were built for iOS 15 with Xcode 13.
 ### Consolidation III
 - [ ] Milestone: Projects 4-6 [Day 35]
 ### Scaling up to bigger apps
-- [ ] Project 7 [Days 36 - 38]
+- [x] [Project 7 - iExpense](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/10-Project-7-iExpense) [Days 36 - 38]
 - [ ] Project 8 [Days 39 - 42]
 - [ ] Project 9 [Days 43 - 46]
 ### Consolidation IV

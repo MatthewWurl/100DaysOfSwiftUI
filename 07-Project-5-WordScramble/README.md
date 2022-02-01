@@ -10,11 +10,24 @@ This project includes solutions to the challenges.
 
 ## Screenshots
 
+### Light Mode
+
 <div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Project%205%20-%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Project%205%20-%202.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Project%205%20-%203.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Project%205%20-%204.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Project%205%20-%205.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Project%205%20-%206.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Light/Project%205%20-%20Light%201.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Light/Project%205%20-%20Light%202.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Light/Project%205%20-%20Light%203.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Light/Project%205%20-%20Light%204.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Light/Project%205%20-%20Light%205.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Light/Project%205%20-%20Light%206.png" width="250">
+</div>
+
+### Dark Mode
+
+<div>
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Dark/Project%205%20-%20Dark%201.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Dark/Project%205%20-%20Dark%202.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Dark/Project%205%20-%20Dark%203.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Dark/Project%205%20-%20Dark%204.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Dark/Project%205%20-%20Dark%205.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/07-Project-5-WordScramble/Screenshots/Dark/Project%205%20-%20Dark%206.png" width="250">
 </div>

@@ -10,9 +10,16 @@ This project includes solutions to the challenges.
 
 ## Screenshots
 
+## Light Mode
+
 <div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/04-Project-3-ViewsAndModifiers/Screenshots/Project%203%20-%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Project%201%20-%203.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/04-Project-3-ViewsAndModifiers/Screenshots/Light/Project%203%20-%20Light%201.png" width="250">
 </div>
 
-*Note: Screenshot 2 is from [Project 1 - WeSplit](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/01-Project-1-WeSplit).*
+## Dark Mode
+
+<div>
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/04-Project-3-ViewsAndModifiers/Screenshots/Dark/Project%203%20-%20Dark%201.png" width="250">
+</div>
+
+*Note: The screenshot for the Project 1 - WeSplit challenge is in the respective project directory.*

@@ -23,9 +23,20 @@
 
 ## Screenshots
 
+### Light Mode
+
 <div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/05-Milestone-Project-RockPaperScissorsBrainGame/Screenshots/Milestone%20Project%20-%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/05-Milestone-Project-RockPaperScissorsBrainGame/Screenshots/Milestone%20Project%20-%202.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/05-Milestone-Project-RockPaperScissorsBrainGame/Screenshots/Milestone%20Project%20-%203.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/05-Milestone-Project-RockPaperScissorsBrainGame/Screenshots/Milestone%20Project%20-%204.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/05-Milestone-Project-RockPaperScissorsBrainGame/Screenshots/Light/Milestone%20Project%20-%20Light%201.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/05-Milestone-Project-RockPaperScissorsBrainGame/Screenshots/Light/Milestone%20Project%20-%20Light%202.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/05-Milestone-Project-RockPaperScissorsBrainGame/Screenshots/Light/Milestone%20Project%20-%20Light%203.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/05-Milestone-Project-RockPaperScissorsBrainGame/Screenshots/Light/Milestone%20Project%20-%20Light%204.png" width="250">
+</div>
+
+### Dark Mode
+
+<div>
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/05-Milestone-Project-RockPaperScissorsBrainGame/Screenshots/Dark/Milestone%20Project%20-%20Dark%201.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/05-Milestone-Project-RockPaperScissorsBrainGame/Screenshots/Dark/Milestone%20Project%20-%20Dark%202.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/05-Milestone-Project-RockPaperScissorsBrainGame/Screenshots/Dark/Milestone%20Project%20-%20Dark%203.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/05-Milestone-Project-RockPaperScissorsBrainGame/Screenshots/Dark/Milestone%20Project%20-%20Dark%204.png" width="250">
 </div>

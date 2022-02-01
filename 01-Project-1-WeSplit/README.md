@@ -10,10 +10,19 @@ This project includes solutions to the challenges.
 
 ## Screenshots
 
+### Light Mode
+
 <div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Project%201%20-%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Project%201%20-%202.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Project%201%20-%203.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Light/Project%201%20-%20Light%201.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Light/Project%201%20-%20Light%202.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Light/Project%201%20-%20Light%203.png" width="250">
+</div>
+
+### Dark Mode
+<div>
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Dark/Project%201%20-%20Dark%201.png" width="250"/>
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Dark/Project%201%20-%20Dark%202.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/01-Project-1-WeSplit/Screenshots/Dark/Project%201%20-%20Dark%203.png" width="250">
 </div>
 
 *Note: Screenshot 3 includes a feature that was added in from the Project 3 challenges.*

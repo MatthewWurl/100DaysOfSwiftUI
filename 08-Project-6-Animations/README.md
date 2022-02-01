@@ -12,7 +12,16 @@ Go back to the [Guess the Flag](https://github.com/AnxietyMedicine/100DaysOfSwif
 
 ## Screenshots
 
+### Light Mode
+
 <div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/08-Project-6-Animations/Screenshots/Project%206%20-%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/08-Project-6-Animations/Screenshots/Project%206%20-%202.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/08-Project-6-Animations/Screenshots/Light/Project%206%20-%20Light%201.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/08-Project-6-Animations/Screenshots/Light/Project%206%20-%20Light%202.png" width="250">
+</div>
+
+### Dark Mode
+
+<div>
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/08-Project-6-Animations/Screenshots/Dark/Project%206%20-%20Dark%201.png" width="250">
+  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/08-Project-6-Animations/Screenshots/Dark/Project%206%20-%20Dark%202.png" width="250">
 </div>

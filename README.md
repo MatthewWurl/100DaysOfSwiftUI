@@ -9,7 +9,12 @@ I have done all of the optional challenges as well (You can find this informatio
 
 These projects were built for iOS 15 with Xcode 13.
 
-***(Note: Screenshots are included in the respective project directories.)***
+## What's included in each project directory?
+* Project source code
+  * Challenge solutions integrated
+* List of project challenges
+* Project screenshots
+  * Light & mode included
 
 ## List of Projects
 ### Starting SwiftUI
@@ -28,7 +33,7 @@ These projects were built for iOS 15 with Xcode 13.
 ### Scaling up to bigger apps
 - [x] [Project 7 - iExpense](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/10-Project-7-iExpense) [Days 36 - 38]
 - [x] [Project 8 - Moonshot](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/11-Project-8-Moonshot) [Days 39 - 42]
-- [ ] Project 9 [Days 43 - 46]
+- [x] [Project 9 - Drawing](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/12-Project-9-Drawing) [Days 43 - 46]
 ### Consolidation IV
 - [ ] Milestone: Projects 7-9 [Day 47]
 ### Focus on data

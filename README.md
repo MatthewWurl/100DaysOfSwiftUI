@@ -18,24 +18,24 @@ These projects were built for iOS 15 with Xcode 13.
 
 ## List of Projects
 ### Starting SwiftUI
-- [x] [Project 1 - WeSplit](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/01-Project-1-WeSplit) [Days 16 - 18]
-- [x] [Challenge Day](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/02-Challenge) [Day 19]
-- [x] [Project 2 - Guess the Flag](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/03-Project-2-GuessTheFlag) [Days 20 - 22]
-- [x] [Project 3 - Views and Modifiers](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/04-Project-3-ViewsAndModifiers) [Days 23 - 24]
+- [x] [Project 1 - WeSplit](01-Project-1-WeSplit) [Days 16 - 18]
+- [x] [Challenge Day](02-Challenge) [Day 19]
+- [x] [Project 2 - Guess the Flag](03-Project-2-GuessTheFlag) [Days 20 - 22]
+- [x] [Project 3 - Views and Modifiers](04-Project-3-ViewsAndModifiers) [Days 23 - 24]
 ### Consolidation II
-- [x] [Milestone: Projects 1-3](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/05-Milestone-Project-RockPaperScissorsBrainGame) [Day 25]
+- [x] [Milestone: Projects 1-3](05-Milestone-Project-RockPaperScissorsBrainGame) [Day 25]
 ### Expanding your skills
-- [x] [Project 4 - BetterRest](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/06-Project-4-BetterRest) [Days 26 - 28]
-- [x] [Project 5 - Word Scramble](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/07-Project-5-WordScramble) [Days 29 - 31]
-- [x] [Project 6 - Animations](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/08-Project-6-Animations) [Days 32 - 34]
+- [x] [Project 4 - BetterRest](06-Project-4-BetterRest) [Days 26 - 28]
+- [x] [Project 5 - Word Scramble](07-Project-5-WordScramble) [Days 29 - 31]
+- [x] [Project 6 - Animations](08-Project-6-Animations) [Days 32 - 34]
 ### Consolidation III
 - [ ] Milestone: Projects 4-6 [Day 35]
 ### Scaling up to bigger apps
-- [x] [Project 7 - iExpense](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/10-Project-7-iExpense) [Days 36 - 38]
-- [x] [Project 8 - Moonshot](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/11-Project-8-Moonshot) [Days 39 - 42]
-- [x] [Project 9 - Drawing](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/12-Project-9-Drawing) [Days 43 - 46]
+- [x] [Project 7 - iExpense](10-Project-7-iExpense) [Days 36 - 38]
+- [x] [Project 8 - Moonshot](11-Project-8-Moonshot) [Days 39 - 42]
+- [x] [Project 9 - Drawing](12-Project-9-Drawing) [Days 43 - 46]
 ### Consolidation IV
-- [ ] Milestone: Projects 7-9 [Day 47]
+- [x] [Milestone: Projects 7-9](13-Milestone-Project-HabitTracker) [Day 47]
 ### Focus on data
 - [ ] Project 10 [Days 49 - 52]
 - [ ] Project 11 [Days 53 - 56]

@@ -14,7 +14,7 @@ These projects were built for iOS 15 with Xcode 13.
   * Challenge solutions integrated
 * List of project challenges
 * Project screenshots
-  * Light & mode included
+  * Light & dark mode included
 
 ## List of Projects
 ### Starting SwiftUI

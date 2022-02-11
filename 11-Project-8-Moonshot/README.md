@@ -12,12 +12,12 @@ I also added an animation to spin the Apollo mission logos in the MissionView.
 
 ## Screenshots
 
-### Light & Dark (Prefers Dark Theme)
+### Light Mode & Dark Mode (Prefers Dark Mode)
 
 <div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/11-Project-8-Moonshot/Screenshots/Dark/Project%208%20-%20Dark%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/11-Project-8-Moonshot/Screenshots/Dark/Project%208%20-%20Dark%202.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/11-Project-8-Moonshot/Screenshots/Dark/Project%208%20-%20Dark%203.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/11-Project-8-Moonshot/Screenshots/Dark/Project%208%20-%20Dark%204.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/11-Project-8-Moonshot/Screenshots/Dark/Project%208%20-%20Dark%205.png" width="250">
+  <img src="Screenshots/Dark/Dark_01.png" width="250">
+  <img src="Screenshots/Dark/Dark_02.png" width="250">
+  <img src="Screenshots/Dark/Dark_03.png" width="250">
+  <img src="Screenshots/Dark/Dark_04.png" width="250">
+  <img src="Screenshots/Dark/Dark_05.png" width="250">
 </div>

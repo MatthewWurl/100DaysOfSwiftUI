@@ -54,7 +54,7 @@ struct ContentView: View {
                         
                         Text(item.amount,
                              format: .currency(code: currencyCode))
-                            .styledAmount(item.amount   )
+                            .styledAmount(item.amount)
                     }
                 }
                 .onDelete(perform: removeItems)
@@ -70,7 +70,6 @@ struct ContentView: View {
             .sheet(isPresented: $isShowingAddExpense) {
                 AddView(expenses: expenses)
             }
-
         }
     }
     

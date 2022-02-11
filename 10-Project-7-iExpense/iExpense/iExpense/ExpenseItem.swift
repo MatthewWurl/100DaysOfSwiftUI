@@ -12,4 +12,10 @@ struct ExpenseItem: Codable, Identifiable {
     let name: String
     let type: String
     let amount: Double
+    
+    static let types = ItemType.allCases
+    
+    enum ItemType: CaseIterable {
+        case business, personal
+    }
 }

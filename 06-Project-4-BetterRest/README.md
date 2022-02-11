@@ -12,15 +12,15 @@ This project includes soltions to the challenges.
 ### Light Mode
 
 <div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/06-Project-4-BetterRest/Screenshots/Light/Project%204%20-%20Light%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/06-Project-4-BetterRest/Screenshots/Light/Project%204%20-%20Light%202.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/06-Project-4-BetterRest/Screenshots/Light/Project%204%20-%20Light%203.png" width="250">
+  <img src="Screenshots/Light/Light_01.png" width="250">
+  <img src="Screenshots/Light/Light_02.png" width="250">
+  <img src="Screenshots/Light/Light_03.png" width="250">
 </div>
 
 ### Dark Mode
 
 <div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/06-Project-4-BetterRest/Screenshots/Dark/Project%204%20-%20Dark%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/06-Project-4-BetterRest/Screenshots/Dark/Project%204%20-%20Dark%202.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/06-Project-4-BetterRest/Screenshots/Dark/Project%204%20-%20Dark%203.png" width="250">
+  <img src="Screenshots/Dark/Dark_01.png" width="250">
+  <img src="Screenshots/Dark/Dark_02.png" width="250">
+  <img src="Screenshots/Dark/Dark_03.png" width="250">
 </div>

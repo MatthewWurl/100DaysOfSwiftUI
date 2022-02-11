@@ -16,13 +16,13 @@ I chose to do length conversions for my challenge project.
 ### Light Mode
 
 <div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/02-Challenge/Screenshots/Light/Challenge%20Day%20-%20Light%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/02-Challenge/Screenshots/Light/Challenge%20Day%20-%20Light%202.png" width="250">
+  <img src="Screenshots/Light/Light_01.png" width="250">
+  <img src="Screenshots/Light/Light_02.png" width="250">
 </div>
 
 ### Dark Mode
 
 <div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/02-Challenge/Screenshots/Dark/Challenge%20Day%20-%20Dark%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/02-Challenge/Screenshots/Dark/Challenge%20Day%20-%20Dark%202.png" width="250">
+  <img src="Screenshots/Dark/Dark_01.png" width="250">
+  <img src="Screenshots/Dark/Dark_02.png" width="250">
 </div>

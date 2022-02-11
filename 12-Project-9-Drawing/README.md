@@ -10,26 +10,26 @@ This project includes solutions to the challenges.
 
 ## Screenshots
 
-### Light
+### Light Mode
 
 <div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Light/Project%209%20-%20Light%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Light/Project%209%20-%20Light%202.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Light/Project%209%20-%20Light%203.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Light/Project%209%20-%20Light%204.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Light/Project%209%20-%20Light%205.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Light/Project%209%20-%20Light%206.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Light/Project%209%20-%20Light%207.png" width="250">
+  <img src="Screenshots/Light/Light_01.png" width="250">
+  <img src="Screenshots/Light/Light_02.png" width="250">
+  <img src="Screenshots/Light/Light_03.png" width="250">
+  <img src="Screenshots/Light/Light_04.png" width="250">
+  <img src="Screenshots/Light/Light_05.png" width="250">
+  <img src="Screenshots/Light/Light_06.png" width="250">
+  <img src="Screenshots/Light/Light_07.png" width="250">
 </div>
 
-### Dark
+### Dark Mode
 
 <div>
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Dark/Project%209%20-%20Dark%201.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Dark/Project%209%20-%20Dark%202.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Dark/Project%209%20-%20Dark%203.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Dark/Project%209%20-%20Dark%204.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Dark/Project%209%20-%20Dark%205.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Dark/Project%209%20-%20Dark%206.png" width="250">
-  <img src="https://github.com/AnxietyMedicine/100DaysOfSwiftUI/blob/main/12-Project-9-Drawing/Screenshots/Dark/Project%209%20-%20Dark%207.png" width="250">
+  <img src="Screenshots/Dark/Dark_01.png" width="250">
+  <img src="Screenshots/Dark/Dark_02.png" width="250">
+  <img src="Screenshots/Dark/Dark_03.png" width="250">
+  <img src="Screenshots/Dark/Dark_04.png" width="250">
+  <img src="Screenshots/Dark/Dark_05.png" width="250">
+  <img src="Screenshots/Dark/Dark_06.png" width="250">
+  <img src="Screenshots/Dark/Dark_07.png" width="250">
 </div>

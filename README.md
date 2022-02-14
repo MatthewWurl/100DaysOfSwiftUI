@@ -37,7 +37,7 @@ These projects were built for iOS 15 with Xcode 13.
 ### Consolidation IV
 - [x] [Milestone: Projects 7-9](13-Milestone-Project-HabitTracker) [Day 47]
 ### Focus on data
-- [ ] Project 10 [Days 49 - 52]
+- [x] [Project 10 - Cupcake Corner](14-Project-10-CupcakeCorner) [Days 49 - 52]
 - [ ] Project 11 [Days 53 - 56]
 - [ ] Project 12 [Days 57 - 59]
 ### Consolidation V

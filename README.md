@@ -38,7 +38,7 @@ These projects were built for iOS 15 with Xcode 13.
 - [x] [Milestone: Projects 7-9](13-Milestone-Project-HabitTracker) [Day 47]
 ### Focus on data
 - [x] [Project 10 - Cupcake Corner](14-Project-10-CupcakeCorner) [Days 49 - 52]
-- [ ] Project 11 [Days 53 - 56]
+- [x] [Project 11 - Bookworm](15-Project-11-Bookworm) [Days 53 - 56]
 - [ ] Project 12 [Days 57 - 59]
 ### Consolidation V
 - [ ] Milestone: Projects 10-12 [Day 60]

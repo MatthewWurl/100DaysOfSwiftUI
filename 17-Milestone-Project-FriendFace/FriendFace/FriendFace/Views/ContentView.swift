@@ -19,7 +19,7 @@ struct ContentView: View {
                     HStack {
                         Circle()
                             .fill(
-                                user.isActive ? .green : .red
+                                user.isActive ? StatusColor.online : StatusColor.offline
                             )
                             .frame(width: 20, height: 20)
                         
@@ -27,7 +27,6 @@ struct ContentView: View {
                             .padding(.horizontal, 10)
                     }
                 }
-
             }
             .navigationTitle("FriendFace")
         }

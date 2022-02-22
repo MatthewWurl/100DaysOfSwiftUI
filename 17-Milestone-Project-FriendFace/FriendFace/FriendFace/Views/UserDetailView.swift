@@ -10,16 +10,19 @@ import SwiftUI
 struct UserDetailView: View {
     let user: User
     
+    var statusString: String {
+        user.isActive ? "Currently online" : "Currently offline"
+    }
+    
+    var statusColor: Color {
+        user.isActive ? StatusColor.online : StatusColor.offline
+    }
+    
     var body: some View {
         List {
             Section("Status") {
-                user.isActive ? (
-                    Text("Currently online")
-                        .foregroundColor(.green)
-                ) : (
-                    Text("Currently offline")
-                        .foregroundColor(.red)
-                )
+                Text(statusString)
+                    .foregroundColor(statusColor)
             }
             
             Section("Company") {

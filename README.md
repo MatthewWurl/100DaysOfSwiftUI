@@ -23,25 +23,25 @@ These projects were built for iOS 15 with Xcode 13.
 - [x] [Project 2 - Guess the Flag](03-Project-2-GuessTheFlag) [Days 20 - 22]
 - [x] [Project 3 - Views and Modifiers](04-Project-3-ViewsAndModifiers) [Days 23 - 24]
 ### Consolidation II
-- [x] [Milestone: Projects 1-3](05-Milestone-Project-RockPaperScissorsBrainGame) [Day 25]
+- [x] [Milestone - RockPaperScissorsBrainGame (Projects 1-3)](05-Milestone-Project-RockPaperScissorsBrainGame) [Day 25]
 ### Expanding your skills
 - [x] [Project 4 - BetterRest](06-Project-4-BetterRest) [Days 26 - 28]
 - [x] [Project 5 - Word Scramble](07-Project-5-WordScramble) [Days 29 - 31]
 - [x] [Project 6 - Animations](08-Project-6-Animations) [Days 32 - 34]
 ### Consolidation III
-- [ ] Milestone: Projects 4-6 [Day 35]
+- [ ] Milestone (Projects 4-6) [Day 35]
 ### Scaling up to bigger apps
 - [x] [Project 7 - iExpense](10-Project-7-iExpense) [Days 36 - 38]
 - [x] [Project 8 - Moonshot](11-Project-8-Moonshot) [Days 39 - 42]
 - [x] [Project 9 - Drawing](12-Project-9-Drawing) [Days 43 - 46]
 ### Consolidation IV
-- [x] [Milestone: Projects 7-9](13-Milestone-Project-HabitTracker) [Day 47]
+- [x] [Milestone - Habit Tracker (Projects 7-9)](13-Milestone-Project-HabitTracker) [Day 47]
 ### Focus on data
 - [x] [Project 10 - Cupcake Corner](14-Project-10-CupcakeCorner) [Days 49 - 52]
 - [x] [Project 11 - Bookworm](15-Project-11-Bookworm) [Days 53 - 56]
 - [x] [Project 12 - CoreDataProject](16-Project-12-CoreDataProject) [Days 57 - 59]
 ### Consolidation V
-- [ ] Milestone: Projects 10-12 [Day 60]
+- [x] [Milestone - FriendFace (Projects 10-12)](17-Milestone-Project-FriendFace) [Day 60]
 ### Views and view controllers
 - [ ] Project 13 [Days 62 - 67]
 - [ ] Project 14 [Days 68 - 73]

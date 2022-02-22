@@ -10,6 +10,10 @@ import SwiftUI
 struct UserDetailView: View {
     let user: User
     
+    var sortedFriends: [Friend] {
+        user.friends.sorted { $0.name < $1.name }
+    }
+    
     var statusString: String {
         user.isActive ? "Currently online" : "Currently offline"
     }
@@ -53,7 +57,7 @@ struct UserDetailView: View {
             }
             
             Section("Friends") {
-                ForEach(user.friends) { friend in
+                ForEach(sortedFriends) { friend in
                     Text(friend.name)
                 }
             }

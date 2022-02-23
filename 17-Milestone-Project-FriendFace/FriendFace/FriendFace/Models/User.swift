@@ -6,10 +6,9 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct User: Codable, Identifiable {
-    let id: String
+    let id: UUID
     let isActive: Bool
     let name: String
     let age: Int
@@ -22,7 +21,7 @@ struct User: Codable, Identifiable {
     let friends: [Friend]
     
     static let sampleUser = User(
-        id: UUID().uuidString,
+        id: UUID(),
         isActive: true,
         name: "Sample User",
         age: 33,
@@ -33,9 +32,9 @@ struct User: Codable, Identifiable {
         registered: Date.now,
         tags: ["tag1", "tag2", "tag3", "tag4", "tag5", "tag6", "tag7"],
         friends: [
-            Friend(id: UUID().uuidString, name: "Friend One"),
-            Friend(id: UUID().uuidString, name: "Friend Two"),
-            Friend(id: UUID().uuidString, name: "Friend Three")
+            Friend(id: UUID(), name: "Friend One"),
+            Friend(id: UUID(), name: "Friend Two"),
+            Friend(id: UUID(), name: "Friend Three")
         ]
     )
 }

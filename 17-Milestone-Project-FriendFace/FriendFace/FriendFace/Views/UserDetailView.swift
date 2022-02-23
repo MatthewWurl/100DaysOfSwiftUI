@@ -8,18 +8,25 @@
 import SwiftUI
 
 struct UserDetailView: View {
-    let user: User
-    
-    var sortedFriends: [Friend] {
-        user.friends.sorted { $0.name < $1.name }
-    }
+    let cachedUser: CachedUser
     
     var statusString: String {
-        user.isActive ? "Currently online" : "Currently offline"
+        cachedUser.isActive ? "Currently online" : "Currently offline"
     }
     
     var statusColor: Color {
-        user.isActive ? StatusColor.online : StatusColor.offline
+        cachedUser.isActive ? StatusColor.online : StatusColor.offline
+    }
+    
+    var userTags: [String] {
+        cachedUser.wrappedTags.components(separatedBy: ",")
+    }
+    
+    var friendsArrayCount: Int { cachedUser.friendsArray.count }
+    var friendsSetcount: Int { cachedUser.cachedFriends?.count ?? 999 }
+    
+    init(cachedUser: CachedUser) {
+        self.cachedUser = cachedUser
     }
     
     var body: some View {
@@ -30,53 +37,45 @@ struct UserDetailView: View {
             }
             
             Section("Company") {
-                Text(user.company)
+                Text(cachedUser.wrappedCompany)
             }
             
             Section("Email") {
-                Text(user.email)
+                Text(cachedUser.wrappedEmail)
             }
             
             Section("Address") {
-                Text(user.address)
+                Text(cachedUser.wrappedAddress)
             }
             
             Section("About") {
                 NavigationLink {
-                    UserAboutText(user: user)
+                    UserAboutText(cachedUser: cachedUser)
                 } label: {
-                    Text(user.about)
+                    Text(cachedUser.wrappedAbout)
                         .lineLimit(2)
                 }
             }
             
             Section("Date Registered") {
-                Text(user.registered.formatted(
+                Text(cachedUser.wrappedRegistered.formatted(
                     date: .abbreviated,
                     time: .shortened))
             }
             
             Section("Friends") {
-                ForEach(sortedFriends) { friend in
-                    Text(friend.name)
+                ForEach(cachedUser.friendsArray) { cachedFriend in
+                    Text(cachedFriend.wrappedName)
                 }
             }
             
             Section("Tags") {
-                ForEach(user.tags, id: \.hashValue) { tag in
+                ForEach(userTags, id: \.hashValue) { tag in
                     Text(tag)
                 }
             }
         }
-        .navigationTitle("\(user.name), \(user.age)")
+        .navigationTitle("\(cachedUser.wrappedName), \(cachedUser.age)")
         .navigationBarTitleDisplayMode(.inline)
-    }
-}
-
-struct UserDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            UserDetailView(user: User.sampleUser)
-        }
     }
 }

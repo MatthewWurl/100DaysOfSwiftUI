@@ -8,33 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.managedObjectContext) var context
+    @FetchRequest(sortDescriptors: [
+        SortDescriptor(\.name)
+    ]) var cachedUsers: FetchedResults<CachedUser>
+    
     @StateObject var userViewModel = UserViewModel()
     
     var body: some View {
         NavigationView {
-            List(userViewModel.users) { user in
-                NavigationLink {
-                    UserDetailView(user: user)
-                } label: {
-                    HStack {
-                        Circle()
-                            .fill(
-                                user.isActive ? StatusColor.online : StatusColor.offline
-                            )
-                            .frame(width: 20, height: 20)
-                        
-                        Text(user.name)
-                            .padding(.horizontal, 10)
+            VStack {
+                List(cachedUsers) { cachedUser in
+                    NavigationLink {
+                        UserDetailView(cachedUser: cachedUser)
+                    } label : {
+                        HStack {
+                            Circle()
+                                .fill(
+                                    cachedUser.isActive ? StatusColor.online : StatusColor.offline
+                                )
+                                .frame(width: 20, height: 20)
+                            
+                            Text(cachedUser.wrappedName)
+                                .padding(.horizontal, 10)
+                        }
                     }
                 }
             }
             .navigationTitle("FriendFace")
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        .onAppear {
+            // Comment this line out to see that the data is saved to Core Data
+            userViewModel.fetchUsers(context: context)
+        }
     }
 }

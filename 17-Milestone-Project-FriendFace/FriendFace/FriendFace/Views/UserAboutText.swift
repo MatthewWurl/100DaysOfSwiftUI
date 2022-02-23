@@ -8,18 +8,12 @@
 import SwiftUI
 
 struct UserAboutText: View {
-    let user: User
+    let cachedUser: CachedUser
     
     var body: some View {
-        Text(user.about)
+        Text(cachedUser.wrappedAbout)
             .padding()
-            .navigationTitle("About \(user.name)")
+            .navigationTitle("About \(cachedUser.wrappedName)")
             .navigationBarTitleDisplayMode(.inline)
-    }
-}
-
-struct UserAboutText_Previews: PreviewProvider {
-    static var previews: some View {
-        UserAboutText(user: User.sampleUser)
     }
 }

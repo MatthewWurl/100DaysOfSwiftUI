@@ -4,7 +4,7 @@ This project includes solutions to the challenges.
 
 ## Challenges
 
-Go back to the [Guess the Flag](https://github.com/AnxietyMedicine/100DaysOfSwiftUI/tree/main/03-Project-2-GuessTheFlag) project and add some animation:
+Go back to the [Guess the Flag](../03-Project-2-GuessTheFlag) project and add some animation:
 
 1. When you tap a flag, make it spin around 360 degrees on the Y axis.
 2. Make the other two buttons fade out to 25% opacity.

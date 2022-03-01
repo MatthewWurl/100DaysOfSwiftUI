@@ -43,7 +43,7 @@ These projects were built for iOS 15 with Xcode 13.
 ### Consolidation V
 - [x] [Milestone - FriendFace (Projects 10-12)](17-Milestone-Project-FriendFace) [Day 60]
 ### Views and view controllers
-- [ ] Project 13 [Days 62 - 67]
+- [x] [Project 13 - Instafilter](18-Project-13-Instafilter) [Days 62 - 67]
 - [ ] Project 14 [Days 68 - 73]
 - [ ] Project 15 [Days 74 - 76]
 ### Consolidation VI

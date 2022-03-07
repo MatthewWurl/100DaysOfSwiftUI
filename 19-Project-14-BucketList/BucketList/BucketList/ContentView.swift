@@ -67,8 +67,10 @@ struct ContentView: View {
                 .environmentObject(EditView.ViewModel(location: place))
             }
         } else {
-            Button("Unlock Places") {
+            Button {
                 viewModel.authenticate()
+            } label: {
+                Label("Unlock Places", systemImage: "lock.fill")
             }
             .padding()
             .background(.blue)

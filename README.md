@@ -44,7 +44,7 @@ These projects were built for iOS 15 with Xcode 13.
 - [x] [Milestone - FriendFace (Projects 10-12)](17-Milestone-Project-FriendFace) [Day 60]
 ### Views and view controllers
 - [x] [Project 13 - Instafilter](18-Project-13-Instafilter) [Days 62 - 67]
-- [ ] Project 14 [Days 68 - 73]
+- [x] [Project 14 - BucketList](19-Project-14-BucketList) [Days 68 - 73]
 - [ ] Project 15 [Days 74 - 76]
 ### Consolidation VI
 - [ ] Milestone: Projects 13-15 [Day 77]

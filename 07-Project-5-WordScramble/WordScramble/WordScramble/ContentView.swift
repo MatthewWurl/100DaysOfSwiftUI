@@ -48,6 +48,10 @@ struct ContentView: View {
                             Spacer()
                             Text("+\(wordLengthValues[word.count] ?? 0)")
                         }
+                        // Project 15 challenge
+                        .accessibilityElement()
+                        .accessibilityLabel(word)
+                        .accessibilityHint("\(word.count) letters")
                         .foregroundColor(word.count == 8 ? .green : .primary)
                     }
                 }

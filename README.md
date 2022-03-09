@@ -45,7 +45,7 @@ These projects were built for iOS 15 with Xcode 13.
 ### Views and view controllers
 - [x] [Project 13 - Instafilter](18-Project-13-Instafilter) [Days 62 - 67]
 - [x] [Project 14 - BucketList](19-Project-14-BucketList) [Days 68 - 73]
-- [ ] Project 15 [Days 74 - 76]
+- [x] [Project 15 - Accessibility App] [Days 74 - 76]
 ### Consolidation VI
 - [ ] Milestone: Projects 13-15 [Day 77]
 ### Controlling UI flow

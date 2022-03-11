@@ -47,7 +47,7 @@ These projects were built for iOS 15 with Xcode 13.
 - [x] [Project 14 - BucketList](19-Project-14-BucketList) [Days 68 - 73]
 - [x] [Project 15 - Accessibility App](20-Project-15-AccessibilityApp) [Days 74 - 76]
 ### Consolidation VI
-- [ ] Milestone: Projects 13-15 [Day 77]
+- [x] [Milestone - Remember Them (Projects 13-15)](21-Milestone-Project-RememberThem) [Day 77]
 ### Controlling UI flow
 - [ ] Project 16 [Days 79 - 85]
 - [ ] Project 17 [Days 86 - 91]

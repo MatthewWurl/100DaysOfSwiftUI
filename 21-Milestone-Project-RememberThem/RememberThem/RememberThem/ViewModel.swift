@@ -37,6 +37,7 @@ class ViewModel: ObservableObject {
     
     func addPerson(_ person: Person) {
         people.append(person)
+        people.sort()
         save()
     }
     

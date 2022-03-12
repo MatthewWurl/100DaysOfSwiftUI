@@ -17,6 +17,9 @@
 		B8BD4A0B27DA7B2700B081C5 /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD4A0A27DA7B2700B081C5 /* AddPersonView.swift */; };
 		B8BD4A0D27DAFD3F00B081C5 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD4A0C27DAFD3E00B081C5 /* PersonDetailView.swift */; };
 		B8BD4A0F27DB0AEA00B081C5 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD4A0E27DB0AEA00B081C5 /* FileManager-DocumentsDirectory.swift */; };
+		B8BD4A1127DBA34900B081C5 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD4A1027DBA34900B081C5 /* LocationFetcher.swift */; };
+		B8BD4A1327DC32CE00B081C5 /* EmptyImagePlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD4A1227DC32CE00B081C5 /* EmptyImagePlaceholder.swift */; };
+		B8BD4A1527DC33FF00B081C5 /* LocationMetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD4A1427DC33FF00B081C5 /* LocationMetLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		B8BD4A0A27DA7B2700B081C5 /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
 		B8BD4A0C27DAFD3E00B081C5 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 		B8BD4A0E27DB0AEA00B081C5 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
+		B8BD4A1027DBA34900B081C5 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		B8BD4A1227DC32CE00B081C5 /* EmptyImagePlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyImagePlaceholder.swift; sourceTree = "<group>"; };
+		B8BD4A1427DC33FF00B081C5 /* LocationMetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMetLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +72,13 @@
 				B8BD49F627DA77EB00B081C5 /* RememberThemApp.swift */,
 				B8BD49F827DA77EB00B081C5 /* ContentView.swift */,
 				B8BD4A0A27DA7B2700B081C5 /* AddPersonView.swift */,
+				B8BD4A1227DC32CE00B081C5 /* EmptyImagePlaceholder.swift */,
 				B8BD4A0C27DAFD3E00B081C5 /* PersonDetailView.swift */,
+				B8BD4A1427DC33FF00B081C5 /* LocationMetLabel.swift */,
 				B8BD4A0627DA787400B081C5 /* ViewModel.swift */,
 				B8BD4A0427DA782E00B081C5 /* ImagePicker.swift */,
 				B8BD4A0827DA791300B081C5 /* Person.swift */,
+				B8BD4A1027DBA34900B081C5 /* LocationFetcher.swift */,
 				B8BD4A0E27DB0AEA00B081C5 /* FileManager-DocumentsDirectory.swift */,
 				B8BD49FA27DA77EC00B081C5 /* Assets.xcassets */,
 				B8BD49FC27DA77EC00B081C5 /* Preview Content */,
@@ -162,7 +171,10 @@
 				B8BD49F727DA77EB00B081C5 /* RememberThemApp.swift in Sources */,
 				B8BD4A0D27DAFD3F00B081C5 /* PersonDetailView.swift in Sources */,
 				B8BD4A0F27DB0AEA00B081C5 /* FileManager-DocumentsDirectory.swift in Sources */,
+				B8BD4A1327DC32CE00B081C5 /* EmptyImagePlaceholder.swift in Sources */,
 				B8BD4A0B27DA7B2700B081C5 /* AddPersonView.swift in Sources */,
+				B8BD4A1127DBA34900B081C5 /* LocationFetcher.swift in Sources */,
+				B8BD4A1527DC33FF00B081C5 /* LocationMetLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +308,7 @@
 				DEVELOPMENT_TEAM = CV4APKG945;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We would like to show where you added a person to your list.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -325,6 +338,7 @@
 				DEVELOPMENT_TEAM = CV4APKG945;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We would like to show where you added a person to your list.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

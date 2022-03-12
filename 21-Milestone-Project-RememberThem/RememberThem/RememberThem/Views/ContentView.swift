@@ -22,6 +22,7 @@ struct ContentView: View {
                         HStack {
                             person.image?
                                 .resizable()
+                                .scaledToFill()
                                 .clipShape(Circle())
                                 .frame(width: 44, height: 44)
                             

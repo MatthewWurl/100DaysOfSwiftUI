@@ -50,7 +50,8 @@ These projects were built for iOS 15 with Xcode 13.
 - [x] [Milestone - Remember Them (Projects 13-15)](21-Milestone-Project-RememberThem) [Day 77]
 ### Controlling UI flow
 - [x] [Project 16 - Hot Prospects](22-Project-16-HotProspects) [Days 79 - 85]
-- [ ] Project 17 [Days 86 - 91]
+- [x] [Project 17 - Flashzilla](23-Project-17-Flashzilla) [Days 86 - 91]
+  * *Missing Challenge #3*
 - [ ] Project 18 [Days 92 - 94]
 ### Consolidation VII
 - [ ] Milestone: Projects 16-18 [Day 95]

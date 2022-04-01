@@ -56,4 +56,4 @@ These projects were built for iOS 15 with Xcode 13.
 ### Consolidation VII
 - [ ] Milestone: Projects 16-18 [Day 95]
 ### One last project
-- [ ] Project 19 [Days 96 - 99]
+- [x] [Project 19 - SnowSeeker](26-Project-19-SnowSeeker) [Days 96 - 99]

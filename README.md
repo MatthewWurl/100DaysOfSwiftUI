@@ -57,3 +57,8 @@ These projects were built for iOS 15 with Xcode 13.
 - [ ] Milestone: Projects 16-18 [Day 95]
 ### One last project
 - [x] [Project 19 - SnowSeeker](26-Project-19-SnowSeeker) [Days 96 - 99]
+
+## Completion
+Course completed on April 2, 2022. Achieved certificate of distinction.
+
+<img src="certificate.jpg" width="720">

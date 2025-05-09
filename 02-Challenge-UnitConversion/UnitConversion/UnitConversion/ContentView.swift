@@ -24,46 +24,40 @@ struct ContentView: View {
     let units: [UnitLength] = [.meters, .kilometers, .feet, .yards, .miles]
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 // First section - Input units
-                Section {
+                Section("Input Units") {
                     Picker("Input units", selection: $inputUnits) {
                         ForEach(units, id: \.self) {
                             Text("\($0.symbol)")
                         }
                     }
                     .pickerStyle(.segmented)
-                } header: {
-                    Text("Input Units")
                 }
+                .listRowBackground(Color.clear)
                 
                 // Second section - Output units
-                Section {
+                Section("Output Units") {
                     Picker("Output units", selection: $outputUnits) {
                         ForEach(units, id: \.self) {
                             Text("\($0.symbol)")
                         }
                     }
                     .pickerStyle(.segmented)
-                } header: {
-                    Text("Output Units")
                 }
+                .listRowBackground(Color.clear)
                 
                 // Third section - Input number
-                Section {
+                Section("Input number") {
                     TextField("Enter a number", value: $inputNum, format: .number)
                         .keyboardType(.decimalPad)
                         .focused($inputNumIsFocused)
-                } header: {
-                    Text("Input number")
                 }
                 
                 // Fourth section - Output number
-                Section {
+                Section("Result") {
                     Text(outputNum?.formatted() ?? "")
-                } header: {
-                    Text("Result")
                 }
             }
             .navigationTitle("Unit Conversion")
@@ -80,10 +74,6 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ZStack {
-            ContentView()
-        }
-    }
+#Preview {
+    ContentView()
 }

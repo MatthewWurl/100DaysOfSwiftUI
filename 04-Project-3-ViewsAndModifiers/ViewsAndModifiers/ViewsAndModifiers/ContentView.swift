@@ -13,7 +13,7 @@ struct ContentView: View {
             LinearGradient(gradient: Gradient(colors: [.cyan, .blue]),
                            startPoint: .top,
                            endPoint: .bottom)
-                .ignoresSafeArea()
+            .ignoresSafeArea()
             
             VStack(spacing: 20) {
                 // Challenge 3 - Prominent title
@@ -21,7 +21,6 @@ struct ContentView: View {
                     .prominentTitle()
                     .multilineTextAlignment(.center)
                     .padding()
-                    
                 
                 // View modifier is passed directly to .modifier()
                 Text("Some text")
@@ -47,7 +46,7 @@ struct CustomCapsule: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.title)
-            .foregroundColor(.white)
+            .foregroundStyle(.white)
             .padding()
             .background(color)
             .clipShape(Capsule())
@@ -58,7 +57,7 @@ struct ProminentTitle: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.largeTitle)
-            .foregroundColor(.blue)
+            .foregroundStyle(.blue)
     }
 }
 
@@ -72,8 +71,6 @@ extension View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

@@ -45,89 +45,90 @@ struct ContentView: View {
     let questionAmount = 8
     
     var body: some View {
-        ZStack {
+        VStack {
+            Spacer()
+            
+            Text("Guess the Flag")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundStyle(.white)
+            
+            Text("Current question: \(currentQuestion)/\(questionAmount)")
+                .font(.title2)
+                .foregroundStyle(.white)
+            
+            VStack(spacing: 15) {
+                VStack {
+                    Text("Tap the flag of")
+                        .foregroundStyle(.secondary)
+                        .font(.subheadline.weight(.heavy))
+                    
+                    Text(countries[correctAnswer])
+                        .font(.largeTitle.weight(.semibold))
+                }
+                
+                ForEach(0..<3) { number in
+                    Button {
+                        flagTapped(number)
+                    } label: {
+                        FlagImage(of: countries[number])
+                        // Project 15 challenge
+                            .accessibilityLabel(
+                                labels[countries[number],
+                                       default: "Unknown flag"]
+                            )
+                        // Project 6 challenge
+                        // Change opacity of incorrect flags to 0.25
+                            .opacity(isAnimatingOpacity ?
+                                     (number == correctAnswer ? 1 : 0.25) : 1)
+                        // Rotate selected answer 360-degrees on Y-axis
+                            .rotation3DEffect(
+                                .degrees(number == selectedAnswer ? rotationAmount : 0),
+                                axis: (x: 0, y: 1, z: 0))
+                        // Scale incorrect answers to 0.5
+                            .scaleEffect(
+                                number == correctAnswer ? 1 : scaleAmount,
+                                anchor: .center)
+                    }
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 20)
+            .background(.regularMaterial)
+            .clipShape(RoundedRectangle(cornerRadius: 20))
+            .alert(scoreTitle, isPresented: $isShowingScore) {
+                Button("Continue", action: askQuestion)
+            } message: {
+                scoreTitle == "Correct!" ? (
+                    Text("Your score is now \(score)/\(questionAmount).")
+                ) : (
+                    Text("Sorry, that's the flag of \(countries[selectedAnswer])!")
+                )
+            }
+            
+            Spacer()
+            Spacer()
+            
+            Text("Score: \(score)/\(questionAmount)")
+                .foregroundStyle(.white)
+                .font(.title)
+                .fontWeight(.bold)
+                .alert("Game over!", isPresented: $isShowingGameOver) {
+                    Button("Play again", action: resetGame)
+                } message: {
+                    Text("Your final score is \(score)/\(questionAmount).")
+                }
+            
+            Spacer()
+        }
+        .padding()
+        .background(
             RadialGradient(stops: [
                 .init(color: Color(red: 0.1, green: 0.2, blue: 0.45), location: 0.3),
                 .init(color: Color(red: 0.76, green: 0.15, blue: 0.26), location: 0.3)
             ], center: .top, startRadius: 200, endRadius: 700)
-                .ignoresSafeArea()
-            
-            VStack {
-                Spacer()
-                
-                Text("Guess the Flag")
-                    .font(.largeTitle.bold())
-                    .foregroundColor(.white)
-                
-                Text("Current question: \(currentQuestion)/\(questionAmount)")
-                    .font(.title2)
-                    .foregroundColor(.white)
-                
-                VStack(spacing: 15) {
-                    VStack {
-                        Text("Tap the flag of")
-                            .foregroundStyle(.secondary)
-                            .font(.subheadline.weight(.heavy))
-                        
-                        Text(countries[correctAnswer])
-                            .font(.largeTitle.weight(.semibold))
-                    }
-                    
-                    ForEach(0..<3) { number in
-                        Button {
-                            flagTapped(number)
-                        } label: {
-                            FlagImage(of: countries[number])
-                            // Project 15 challenge
-                                .accessibilityLabel(
-                                    labels[countries[number],
-                                           default: "Unknown flag"]
-                                )
-                            // Project 6 challenge
-                            // Change opacity of incorrect flags to 0.25
-                                .opacity(isAnimatingOpacity ?
-                                         (number == correctAnswer ? 1 : 0.25) : 1)
-                            // Rotate selected answer 360-degrees on Y-axis
-                                .rotation3DEffect(
-                                    .degrees(number == selectedAnswer ? rotationAmount : 0),
-                                    axis: (x: 0, y: 1, z: 0))
-                            // Scale incorrect answers to 0.5
-                                .scaleEffect(
-                                    number == correctAnswer ? 1 : scaleAmount,
-                                    anchor: .center)
-                        }
-                    }
-                }
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 20)
-                .background(.regularMaterial)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
-                .alert(scoreTitle, isPresented: $isShowingScore) {
-                    Button("Continue", action: askQuestion)
-                } message: {
-                    scoreTitle == "Correct!" ? (
-                        Text("Your score is now \(score)/\(questionAmount).")
-                    ) : (
-                        Text("Sorry, that's the flag of \(countries[selectedAnswer])!")
-                    )
-                }
-                
-                Spacer()
-                Spacer()
-                
-                Text("Score: \(score)/\(questionAmount)")
-                    .foregroundColor(.white)
-                    .font(.title.bold())
-                    .alert("Game over!", isPresented: $isShowingGameOver) {
-                        Button("Play again", action: resetGame)
-                    } message: {
-                        Text("Your final score is \(score)/\(questionAmount).")
-                    }
-                
-                Spacer()
-            }
-            .padding()
-        }
+            .ignoresSafeArea()
+        )
     }
     
     func flagTapped(_ number: Int) {
@@ -188,8 +189,6 @@ struct FlagImage: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

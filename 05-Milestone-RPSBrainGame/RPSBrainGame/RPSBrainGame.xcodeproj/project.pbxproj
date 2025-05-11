@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8D0E3AC27960438009D535E /* RockPaperScissorsBrainGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D0E3AB27960438009D535E /* RockPaperScissorsBrainGameApp.swift */; };
+		B8D0E3AC27960438009D535E /* RPSBrainGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D0E3AB27960438009D535E /* RPSBrainGameApp.swift */; };
 		B8D0E3AE27960438009D535E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D0E3AD27960438009D535E /* ContentView.swift */; };
 		B8D0E3B02796043A009D535E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D0E3AF2796043A009D535E /* Assets.xcassets */; };
 		B8D0E3B32796043A009D535E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D0E3B22796043A009D535E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B8D0E3A827960438009D535E /* RockPaperScissorsBrainGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissorsBrainGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8D0E3AB27960438009D535E /* RockPaperScissorsBrainGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsBrainGameApp.swift; sourceTree = "<group>"; };
+		B8D0E3A827960438009D535E /* RPSBrainGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPSBrainGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8D0E3AB27960438009D535E /* RPSBrainGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSBrainGameApp.swift; sourceTree = "<group>"; };
 		B8D0E3AD27960438009D535E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B8D0E3AF2796043A009D535E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8D0E3B22796043A009D535E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		B8D0E39F27960438009D535E = {
 			isa = PBXGroup;
 			children = (
-				B8D0E3AA27960438009D535E /* RockPaperScissorsBrainGame */,
+				B8D0E3AA27960438009D535E /* RPSBrainGame */,
 				B8D0E3A927960438009D535E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +43,20 @@
 		B8D0E3A927960438009D535E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B8D0E3A827960438009D535E /* RockPaperScissorsBrainGame.app */,
+				B8D0E3A827960438009D535E /* RPSBrainGame.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B8D0E3AA27960438009D535E /* RockPaperScissorsBrainGame */ = {
+		B8D0E3AA27960438009D535E /* RPSBrainGame */ = {
 			isa = PBXGroup;
 			children = (
-				B8D0E3AB27960438009D535E /* RockPaperScissorsBrainGameApp.swift */,
+				B8D0E3AB27960438009D535E /* RPSBrainGameApp.swift */,
 				B8D0E3AD27960438009D535E /* ContentView.swift */,
 				B8D0E3AF2796043A009D535E /* Assets.xcassets */,
 				B8D0E3B12796043A009D535E /* Preview Content */,
 			);
-			path = RockPaperScissorsBrainGame;
+			path = RPSBrainGame;
 			sourceTree = "<group>";
 		};
 		B8D0E3B12796043A009D535E /* Preview Content */ = {
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B8D0E3A727960438009D535E /* RockPaperScissorsBrainGame */ = {
+		B8D0E3A727960438009D535E /* RPSBrainGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8D0E3B62796043A009D535E /* Build configuration list for PBXNativeTarget "RockPaperScissorsBrainGame" */;
+			buildConfigurationList = B8D0E3B62796043A009D535E /* Build configuration list for PBXNativeTarget "RPSBrainGame" */;
 			buildPhases = (
 				B8D0E3A427960438009D535E /* Sources */,
 				B8D0E3A527960438009D535E /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = RockPaperScissorsBrainGame;
-			productName = RockPaperScissorsBrainGame;
-			productReference = B8D0E3A827960438009D535E /* RockPaperScissorsBrainGame.app */;
+			name = RPSBrainGame;
+			productName = RPSBrainGame;
+			productReference = B8D0E3A827960438009D535E /* RPSBrainGame.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,14 +95,14 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					B8D0E3A727960438009D535E = {
 						CreatedOnToolsVersion = 13.2;
 					};
 				};
 			};
-			buildConfigurationList = B8D0E3A327960438009D535E /* Build configuration list for PBXProject "RockPaperScissorsBrainGame" */;
+			buildConfigurationList = B8D0E3A327960438009D535E /* Build configuration list for PBXProject "RPSBrainGame" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B8D0E3A727960438009D535E /* RockPaperScissorsBrainGame */,
+				B8D0E3A727960438009D535E /* RPSBrainGame */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8D0E3AE27960438009D535E /* ContentView.swift in Sources */,
-				B8D0E3AC27960438009D535E /* RockPaperScissorsBrainGameApp.swift in Sources */,
+				B8D0E3AC27960438009D535E /* RPSBrainGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +149,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -180,8 +181,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = CV4APKG945;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -196,7 +199,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -210,6 +213,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -241,8 +245,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = CV4APKG945;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -251,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -268,8 +274,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RockPaperScissorsBrainGame/Preview Content\"";
-				DEVELOPMENT_TEAM = CV4APKG945;
+				DEVELOPMENT_ASSET_PATHS = "\"RPSBrainGame/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -277,12 +282,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wurl.matt.RockPaperScissorsBrainGame;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mattwurl.RPSBrainGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -297,8 +303,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RockPaperScissorsBrainGame/Preview Content\"";
-				DEVELOPMENT_TEAM = CV4APKG945;
+				DEVELOPMENT_ASSET_PATHS = "\"RPSBrainGame/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -306,12 +311,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wurl.matt.RockPaperScissorsBrainGame;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mattwurl.RPSBrainGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,7 +328,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B8D0E3A327960438009D535E /* Build configuration list for PBXProject "RockPaperScissorsBrainGame" */ = {
+		B8D0E3A327960438009D535E /* Build configuration list for PBXProject "RPSBrainGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8D0E3B42796043A009D535E /* Debug */,
@@ -331,7 +337,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8D0E3B62796043A009D535E /* Build configuration list for PBXNativeTarget "RockPaperScissorsBrainGame" */ = {
+		B8D0E3B62796043A009D535E /* Build configuration list for PBXNativeTarget "RPSBrainGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8D0E3B72796043A009D535E /* Debug */,

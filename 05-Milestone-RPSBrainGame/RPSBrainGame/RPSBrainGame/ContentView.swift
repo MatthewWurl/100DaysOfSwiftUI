@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  RockPaperScissorsBrainGame
+//  RPSBrainGame
 //
 //  Created by Matt X on 1/17/22.
 //
@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var appChoice: GameChoice = [.Rock, .Paper, .Scissors].randomElement()!
+    @State private var appChoice: GameChoice = [.rock, .paper, .scissors].randomElement()!
     
-    @State private var expectedOutcome: GameOutcome = [.Win, .Lose].randomElement()!
+    @State private var expectedOutcome: GameOutcome = [.win, .lose].randomElement()!
     @State private var isPlayerCorrect: Bool = true
     
     @State private var currentQuestion = 1
@@ -20,8 +20,8 @@ struct ContentView: View {
     @State private var isShowingScore = false
     @State private var isShowingGameOver = false
     
-    let gameChoices: [GameChoice] = [.Rock, .Paper, .Scissors]
-    let gameOutcomes: [GameOutcome] = [.Win, .Tie, .Lose]
+    let gameChoices: [GameChoice] = [.rock, .paper, .scissors]
+    let gameOutcomes: [GameOutcome] = [.win, .tie, .lose]
     
     let questionAmount = 10
     
@@ -30,8 +30,7 @@ struct ContentView: View {
             LinearGradient(colors: [Color("BG-1"), Color("BG-2")],
                            startPoint: .topLeading,
                            endPoint: .bottomTrailing)
-                .ignoresSafeArea()
-            
+            .ignoresSafeArea()
             
             VStack {
                 Text("RPS Brain Game")
@@ -48,7 +47,7 @@ struct ContentView: View {
                             Text("Your goal is to:")
                             
                             Text(expectedOutcome.description)
-                                .foregroundColor(expectedOutcome == .Win ? .green : .red)
+                                .foregroundStyle(expectedOutcome == .win ? .green : .red)
                         }
                     }
                     .font(.title)
@@ -87,7 +86,7 @@ struct ContentView: View {
                         Text("Your final score is \(score).")
                     }
             }
-            .foregroundColor(.primary)
+            .foregroundStyle(.primary)
             .padding()
         }
     }
@@ -97,14 +96,14 @@ struct ContentView: View {
         
         switch (playerChoice, appChoice) {
             // Winning scenarios
-        case (.Rock, .Scissors), (.Paper, .Rock), (.Scissors, .Paper):
-            actualOutcome = .Win
+        case (.rock, .scissors), (.paper, .rock), (.scissors, .paper):
+            actualOutcome = .win
             // Tying scenarios
-        case (.Rock, .Rock), (.Paper, .Paper), (.Scissors, .Scissors):
-            actualOutcome = .Tie
+        case (.rock, .rock), (.paper, .paper), (.scissors, .scissors):
+            actualOutcome = .tie
             // Losing scenarios
-        case (.Rock, .Paper), (.Paper, .Scissors), (.Scissors, .Rock):
-            actualOutcome = .Lose
+        case (.rock, .paper), (.paper, .scissors), (.scissors, .rock):
+            actualOutcome = .lose
         }
         
         isPlayerCorrect = expectedOutcome == actualOutcome
@@ -117,7 +116,7 @@ struct ContentView: View {
     func nextScenario() {
         if currentQuestion != questionAmount {
             appChoice = gameChoices.randomElement()!
-            expectedOutcome = [.Win, .Lose].randomElement()!
+            expectedOutcome = [.win, .lose].randomElement()!
             
             currentQuestion += 1
         } else {
@@ -132,9 +131,9 @@ struct ContentView: View {
 }
 
 enum GameChoice: String, CaseIterable {
-    case Rock = "🪨"
-    case Paper = "📄"
-    case Scissors = "✂️"
+    case rock = "🪨"
+    case paper = "📄"
+    case scissors = "✂️"
     
     var description: String {
         self.rawValue
@@ -142,17 +141,15 @@ enum GameChoice: String, CaseIterable {
 }
 
 enum GameOutcome: String {
-    case Win = "Win"
-    case Tie = "Tie"
-    case Lose = "Lose"
+    case win = "Win"
+    case tie = "Tie"
+    case lose = "Lose"
     
     var description: String {
         self.rawValue
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

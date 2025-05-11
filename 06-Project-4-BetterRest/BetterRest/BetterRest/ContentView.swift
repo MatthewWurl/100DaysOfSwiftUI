@@ -48,21 +48,25 @@ struct ContentView: View {
     }
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 Section("Desired wake-up time") {
-                    DatePicker("Please enter a time",
-                               selection: $wakeUp,
-                               displayedComponents: .hourAndMinute)
-                        .labelsHidden()
-                        .datePickerStyle(.wheel)
+                    DatePicker(
+                        "Please enter a time",
+                        selection: $wakeUp,
+                        displayedComponents: .hourAndMinute
+                    )
+                    .labelsHidden()
+                    .datePickerStyle(.wheel)
                 }
                 
                 Section("Desired amount of sleep") {
-                    Stepper("\(sleepAmount.formatted()) hours",
-                            value: $sleepAmount,
-                            in: 4...12,
-                            step: 0.25)
+                    Stepper(
+                        "\(sleepAmount.formatted()) hours",
+                        value: $sleepAmount,
+                        in: 4...12,
+                        step: 0.25
+                    )
                 }
                 
                 Section("Daily coffee intake") {
@@ -82,8 +86,6 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

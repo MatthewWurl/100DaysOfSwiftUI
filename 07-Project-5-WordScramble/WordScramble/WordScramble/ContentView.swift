@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var usedWords = [String]()
+    @State private var usedWords: [String] = []
     @State private var rootWord = ""
     @State private var newWord = ""
     @State private var score = 0
@@ -27,7 +27,7 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 Section {
                     TextField("Enter your word", text: $newWord)
@@ -52,7 +52,7 @@ struct ContentView: View {
                         .accessibilityElement()
                         .accessibilityLabel(word)
                         .accessibilityHint("\(word.count) letters")
-                        .foregroundColor(word.count == 8 ? .green : .primary)
+                        .foregroundStyle(word.count == 8 ? .green : .primary)
                     }
                 }
             }
@@ -77,30 +77,47 @@ struct ContentView: View {
     }
     
     func addNewWord() {
-        let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+        let answer = newWord
+            .lowercased()
+            .trimmingCharacters(in: .whitespacesAndNewlines)
         
         guard answer != rootWord else {
-            wordError(title: "Word cannot be the root word", message: "Sorry, try something else!")
+            wordError(
+                title: "Word cannot be the root word",
+                message: "Sorry, try something else!"
+            )
             return
         }
         
         guard answer.count >= 3 else {
-            wordError(title: "Word must be at least 3 letters", message: "Sorry, that word is too short!")
+            wordError(
+                title: "Word must be at least 3 letters",
+                message: "Sorry, that word is too short!"
+            )
             return
         }
         
         guard isOriginal(word: answer) else {
-            wordError(title: "Word used already", message: "Be more original!")
+            wordError(
+                title: "Word used already",
+                message: "Be more original!"
+            )
             return
         }
         
         guard isPossible(word: answer) else {
-            wordError(title: "Word not possible", message: "You can't spell that word from '\(rootWord)'!")
+            wordError(
+                title: "Word not possible",
+                message: "You can't spell that word from '\(rootWord)'!"
+            )
             return
         }
         
         guard isReal(word: answer) else {
-            wordError(title: "Word not recognized", message: "You can't just make them up, you know!")
+            wordError(
+                title: "Word not recognized",
+                message: "You can't just make them up, you know!"
+            )
             return
         }
         
@@ -114,12 +131,18 @@ struct ContentView: View {
     }
     
     func startGame() {
-        guard let startWordsURL = Bundle.main.url(forResource: "start", withExtension: "txt")
+        guard let startWordsURL = Bundle.main.url(
+            forResource: "start",
+            withExtension: "txt"
+        )
         else {
             fatalError("Could not load start.txt from bundle.")
         }
         
-        guard let startWords = try? String(contentsOf: startWordsURL)
+        guard let startWords = try? String(
+            contentsOf: startWordsURL,
+            encoding: .utf8
+        )
         else {
             fatalError("Could not convert contents of start.txt to String.")
         }
@@ -130,7 +153,7 @@ struct ContentView: View {
         
         // Reset score and used words
         score = 0
-        usedWords = [String]()
+        usedWords = []
     }
     
     func isOriginal(word: String) -> Bool {
@@ -141,7 +164,9 @@ struct ContentView: View {
         var tempWord = rootWord
         
         for letter in word {
-            guard let pos = tempWord.firstIndex(of: letter) else { return false }
+            guard let pos = tempWord.firstIndex(of: letter)
+            else { return false }
+            
             tempWord.remove(at: pos)
         }
         
@@ -151,11 +176,13 @@ struct ContentView: View {
     func isReal(word: String) -> Bool {
         let checker = UITextChecker()
         let range = NSRange(location: 0, length: word.utf16.count)
-        let misspelledRange = checker.rangeOfMisspelledWord(in: word,
-                                                            range: range,
-                                                            startingAt: 0,
-                                                            wrap: false,
-                                                            language: "en")
+        let misspelledRange = checker.rangeOfMisspelledWord(
+            in: word,
+            range: range,
+            startingAt: 0,
+            wrap: false,
+            language: "en"
+        )
         
         return misspelledRange.location == NSNotFound
     }
@@ -167,8 +194,6 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

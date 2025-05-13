@@ -12,18 +12,19 @@ struct ContentView: View {
     @State private var dragAmount: CGSize = .zero
     
     let letters = Array("Hello SwiftUI")
-
+    
     var body: some View {
         HStack(spacing: 0) {
-            ForEach(0..<letters.count) { num in
+            ForEach(0..<letters.count, id: \.self) { num in
                 Text(String(letters[num]))
                     .padding(5)
                     .font(.title)
                     .background(isEnabled ? .blue : .red)
                     .offset(dragAmount)
                     .animation(
-                        .default.delay(Double(num) / 20),
-                        value: dragAmount)
+                        .linear.delay(Double(num) / 20),
+                        value: dragAmount
+                    )
             }
         }
         .gesture(
@@ -37,8 +38,6 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

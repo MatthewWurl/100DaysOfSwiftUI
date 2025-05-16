@@ -7,12 +7,55 @@
 
 import SwiftUI
 
+struct ContentView: View {
+    @StateObject var expenses = Expenses()
+    
+    @State private var isShowingAddExpense = false
+    
+    var body: some View {
+        NavigationStack {
+            List {
+                Picker("Expense type", selection: $expenses.selectedItemType) {
+                    ForEach(
+                        ExpenseItem.ItemType.allCases.reversed(),
+                        id: \.self
+                    ) { type in
+                        Text(type.rawValue)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .listRowBackground(Color.clear)
+                
+                Section {
+                    ForEach(
+                        expenses.items.filter {
+                            $0.type == expenses.selectedItemType
+                        }
+                    ) { item in
+                        ExpenseLabel(for: item)
+                    }
+                    .onDelete(perform: expenses.removeItems)
+                }
+            }
+            .navigationTitle("iExpense")
+            .toolbar {
+                Button("New expense", systemImage: "plus") {
+                    isShowingAddExpense = true
+                }
+            }
+            .sheet(isPresented: $isShowingAddExpense) {
+                AddView(expenses: expenses)
+            }
+        }
+    }
+}
+
 struct StyledAmount: ViewModifier {
     let amount: Double
     
     func body(content: Content) -> some View {
         return content
-            .foregroundColor(getAmountColor(for: amount))
+            .foregroundStyle(getAmountColor(for: amount))
     }
     
     func getAmountColor(for amount: Double) -> Color {
@@ -31,59 +74,6 @@ extension View {
     }
 }
 
-struct ContentView: View {
-    @StateObject var expenses = Expenses()
-    
-    @State private var isShowingAddExpense = false
-    
-    let currencyCode = Locale.current.currencyCode ?? "USD"
-    
-    var body: some View {
-        NavigationView {
-            List {
-                ForEach(expenses.items) { item in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(item.name)
-                                .font(.headline)
-                            
-                            Text(item.type)
-                        }
-                        
-                        Spacer()
-                        
-                        Text(item.amount,
-                             format: .currency(code: currencyCode))
-                            .styledAmount(item.amount)
-                    }
-                    .accessibilityLabel(
-                        "\(item.name), \(item.amount) \(currencyCode)"
-                    )
-                    .accessibilityHint(item.type)
-                }
-                .onDelete(perform: removeItems)
-            }
-            .navigationTitle("iExpense")
-            .toolbar {
-                Button {
-                    isShowingAddExpense = true
-                } label: {
-                    Image(systemName: "plus")
-                }
-            }
-            .sheet(isPresented: $isShowingAddExpense) {
-                AddView(expenses: expenses)
-            }
-        }
-    }
-    
-    func removeItems(at offsets: IndexSet) {
-        expenses.items.remove(atOffsets: offsets)
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

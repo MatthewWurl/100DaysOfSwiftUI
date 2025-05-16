@@ -7,59 +7,55 @@
 
 import SwiftUI
 
-enum ExpenseType: String, CaseIterable {
-    case business = "Business"
-    case personal = "Personal"
-    
-    var description: String {
-        self.rawValue
-    }
-}
-
 struct AddView: View {
     @ObservedObject var expenses: Expenses
     
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) private var dismiss
     
     @State private var name = ""
-    @State private var type = "Personal"
-    @State private var amount = 0.0
+    @State private var type: ExpenseItem.ItemType = .personal
+    @State private var amount: Double = 0
     
-    let types = ExpenseType.allCases
-    let currencyCode = Locale.current.currencyCode ?? "USD"
+    let currencyCode = Locale.current.currency?.identifier ?? "USD"
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 TextField("Name", text: $name)
                 
                 Picker("Type", selection: $type) {
-                    ForEach(types, id: \.description) {
-                        Text($0.description)
+                    ForEach(ExpenseItem.ItemType.allCases, id: \.self) { type in
+                        Text(type.rawValue)
                     }
                 }
                 
-                TextField("Amount",
-                          value: $amount,
-                          format: .currency(code: currencyCode))
-                    .keyboardType(.decimalPad)
+                TextField(
+                    "Amount",
+                    value: $amount,
+                    format: .currency(code: currencyCode)
+                )
+                .keyboardType(.decimalPad)
             }
-            .navigationTitle("Add new expense")
+            .navigationTitle("New Expense")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                Button("Save") {    
-                    let item = ExpenseItem(name: name,
-                                           type: type,
-                                           amount: amount)
-                    expenses.items.append(item)
+                Button("Save") {
+                    let item = ExpenseItem(
+                        name: name,
+                        type: type,
+                        amount: amount
+                    )
+                    expenses.addItem(item)
                     dismiss()
                 }
+                .disabled(
+                    name.trimmingCharacters(in: .whitespaces).isEmpty
+                )
             }
         }
     }
 }
 
-struct AddView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddView(expenses: Expenses())
-    }
+#Preview {
+    AddView(expenses: Expenses())
 }

@@ -18,13 +18,9 @@ struct Mission: Decodable, Identifiable {
     let crew: [CrewRole]
     let description: String
     
-    var displayName: String {
-        "Apollo \(id)"
-    }
+    var displayName: String { "Apollo \(id)" }
     
-    var image: String {
-        "apollo\(id)"
-    }
+    var image: String { "apollo\(id)" }
     
     var abbreviatedLaunchDate: String {
         launchDate?.formatted(date: .abbreviated, time: .omitted) ?? "N/A"
@@ -33,4 +29,6 @@ struct Mission: Decodable, Identifiable {
     var completeLaunchDate: String {
         launchDate?.formatted(date: .complete, time: .omitted) ?? "N/A"
     }
+    
+    static let allMissions: [Mission] = Bundle.main.decode("missions.json")
 }

@@ -32,11 +32,11 @@ struct GridLayout: View {
                             VStack {
                                 Text(mission.displayName)
                                     .font(.headline)
-                                    .foregroundColor(.white)
+                                    .foregroundStyle(.white)
                                 
                                 Text(mission.abbreviatedLaunchDate)
                                     .font(.caption)
-                                    .foregroundColor(.white.opacity(0.5))
+                                    .foregroundStyle(.white.opacity(0.5))
                             }
                             .padding(.vertical)
                             .frame(maxWidth: .infinity)
@@ -56,13 +56,11 @@ struct GridLayout: View {
     }
 }
 
-struct GridLayout_Previews: PreviewProvider {
-    static let missions: [Mission] = Bundle.main.decode("missions.json")
-    static let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
-    
-    static var previews: some View {
-        GridLayout(astronauts: astronauts, missions: missions)
-            .background(.darkBackground)
-            .preferredColorScheme(.dark)
-    }
+#Preview {
+    GridLayout(
+        astronauts: Astronaut.allAstronauts,
+        missions: Mission.allMissions
+    )
+    .background(.darkBackground)
+    .preferredColorScheme(.dark)
 }

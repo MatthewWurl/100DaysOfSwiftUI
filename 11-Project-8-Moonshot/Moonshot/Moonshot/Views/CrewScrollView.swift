@@ -21,7 +21,7 @@ struct CrewScrollView: View {
                             Image(crewMember.astronaut.id)
                                 .resizable()
                                 .frame(width: 104, height: 72)
-                                .clipShape(Capsule())
+                                .clipShape(.capsule)
                                 .overlay(
                                     Capsule()
                                         .strokeBorder(.white, lineWidth: 1)
@@ -29,7 +29,7 @@ struct CrewScrollView: View {
                             
                             VStack(alignment: .leading) {
                                 Text(crewMember.astronaut.name)
-                                    .foregroundColor(.white)
+                                    .foregroundStyle(.white)
                                     .font(.headline)
                                 
                                 Text(crewMember.role)

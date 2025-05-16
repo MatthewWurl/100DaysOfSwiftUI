@@ -12,8 +12,6 @@ struct ListLayout: View {
     let missions: [Mission]
     
     var body: some View {
-        UITableView.appearance().backgroundColor = UIColor(Color.darkBackground)
-        
         return List {
             ForEach(missions) { mission in
                 NavigationLink {
@@ -40,15 +38,15 @@ struct ListLayout: View {
             .listRowBackground(Color.darkBackground)
             .listRowSeparatorTint(.lightBackground)
         }
+        .background(.darkBackground)
+        .scrollContentBackground(.hidden)
     }
 }
 
-struct ListLayout_Previews: PreviewProvider {
-    static let missions: [Mission] = Bundle.main.decode("missions.json")
-    static let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
-    
-    static var previews: some View {
-        ListLayout(astronauts: astronauts, missions: missions)
-            .preferredColorScheme(.dark)
-    }
+#Preview {
+    ListLayout(
+        astronauts: Astronaut.allAstronauts,
+        missions: Mission.allMissions
+    )
+    .preferredColorScheme(.dark)
 }

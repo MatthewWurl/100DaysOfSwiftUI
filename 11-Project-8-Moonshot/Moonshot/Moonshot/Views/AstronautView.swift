@@ -27,11 +27,11 @@ struct AstronautView: View {
     }
 }
 
-struct AstronautView_Previews: PreviewProvider {
-    static let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
+#Preview {
+    let name = "armstrong"
     
-    static var previews: some View {
-        AstronautView(astronaut: astronauts["armstrong"]!)
+    NavigationStack {
+        AstronautView(astronaut: Astronaut.allAstronauts[name]!)
             .preferredColorScheme(.dark)
     }
 }

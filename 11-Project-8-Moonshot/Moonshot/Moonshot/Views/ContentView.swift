@@ -10,16 +10,19 @@ import SwiftUI
 struct ContentView: View {
     @State private var isShowingGrid = true
     
-    let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
-    let missions: [Mission] = Bundle.main.decode("missions.json")
-    
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Group {
                 if isShowingGrid {
-                    GridLayout(astronauts: astronauts, missions: missions)
+                    GridLayout(
+                        astronauts: Astronaut.allAstronauts,
+                        missions: Mission.allMissions
+                    )
                 } else {
-                    ListLayout(astronauts: astronauts, missions: missions)
+                    ListLayout(
+                        astronauts: Astronaut.allAstronauts,
+                        missions: Mission.allMissions
+                    )
                 }
             }
             .navigationTitle("Moonshot")
@@ -27,10 +30,8 @@ struct ContentView: View {
             .preferredColorScheme(.dark)
             .toolbar {
                 ToolbarItem {
-                    Button {
+                    Button("Show as \(isShowingGrid ? "List" : "Grid")") {
                         isShowingGrid.toggle()
-                    } label: {
-                        Text("Show as \(isShowingGrid ? "List" : "Grid")")
                     }
                 }
             }
@@ -38,8 +39,6 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

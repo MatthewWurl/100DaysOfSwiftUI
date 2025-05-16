@@ -13,15 +13,17 @@ struct ColorCyclingRectangle: View {
     
     var body: some View {
         ZStack {
-            ForEach(0..<steps) { value in
+            ForEach(0..<steps, id: \.self) { value in
                 Rectangle()
                     .inset(by: Double(value))
                     .strokeBorder(
                         LinearGradient(
-                            gradient: Gradient(colors: [
-                                color(of: value, brightness: 1),
-                                color(of: value, brightness: 0.8)
-                            ]),
+                            gradient: Gradient(
+                                colors: [
+                                    color(of: value, brightness: 1),
+                                    color(of: value, brightness: 0.8)
+                                ]
+                            ),
                             startPoint: .top,
                             endPoint: .bottom
                         ),
@@ -57,8 +59,8 @@ struct ColorCyclingRectangleView: View {
     }
 }
 
-struct ColorCyclingRectangleView_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
+    NavigationStack {
         ColorCyclingRectangleView()
     }
 }

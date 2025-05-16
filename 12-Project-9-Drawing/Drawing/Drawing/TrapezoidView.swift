@@ -42,8 +42,8 @@ struct TrapezoidView: View {
     }
 }
 
-struct TrapezoidView_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
+    NavigationStack {
         TrapezoidView()
     }
 }

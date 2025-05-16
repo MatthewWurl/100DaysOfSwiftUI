@@ -40,7 +40,7 @@ struct ArrowView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            Text("Tap me!")
+            Text("Tap the arrow!")
                 .italic()
                 .padding(.bottom, 50)
             
@@ -61,8 +61,8 @@ struct ArrowView: View {
     }
 }
 
-struct ArrowView_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
+    NavigationStack {
         ArrowView()
     }
 }

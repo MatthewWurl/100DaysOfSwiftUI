@@ -67,10 +67,14 @@ struct SpirographView: View {
         VStack(spacing: 0) {
             Spacer()
             
-            Spirograph(innerRadius: Int(innerRadius), outerRadius: Int(outerRadius),
-                       distance: Int(distance), amount: amount)
-                .stroke(Color(hue: hue, saturation: 1, brightness: 1), lineWidth: 1)
-                .frame(width: 300, height: 300)
+            Spirograph(
+                innerRadius: Int(innerRadius),
+                outerRadius: Int(outerRadius),
+                distance: Int(distance),
+                amount: amount
+            )
+            .stroke(Color(hue: hue, saturation: 1, brightness: 1), lineWidth: 1)
+            .frame(width: 300, height: 300)
             
             Spacer()
             
@@ -102,8 +106,8 @@ struct SpirographView: View {
     }
 }
 
-struct SpirographView_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
+    NavigationStack {
         SpirographView()
     }
 }

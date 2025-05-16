@@ -9,39 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
-                NavigationLink(destination: FlowerView()) {
-                    Text("Flower")
-                }
+                NavigationLink("Flower", destination: FlowerView())
                 
-                NavigationLink(destination: TrapezoidView()) {
-                    Text("Trapezoid")
-                }
+                NavigationLink("Trapezoid", destination: TrapezoidView())
                 
-                NavigationLink(destination: CheckerboardView()) {
-                    Text("Checkerboard")
-                }
+                NavigationLink("Checkerboard", destination: CheckerboardView())
                 
-                NavigationLink(destination: SpirographView()) {
-                    Text("Spirograph")
-                }
+                NavigationLink("Spirograph", destination: SpirographView())
                 
-                NavigationLink(destination: ArrowView()) {
-                    Text("Arrow")
-                }
+                NavigationLink("Arrow", destination: ArrowView())
                 
-                NavigationLink(destination: ColorCyclingRectangleView()) {
-                    Text("Color Cycling Rectangle View")
-                }
+                NavigationLink(
+                    "Color Cycling Rectangle View",
+                    destination: ColorCyclingRectangleView()
+                )
             }
             .navigationTitle("Drawing")
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

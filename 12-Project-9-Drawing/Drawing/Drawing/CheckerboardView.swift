@@ -57,12 +57,11 @@ struct CheckerboardView: View {
             }
             .navigationTitle("Checkerboard")
             .navigationBarTitleDisplayMode(.inline)
-        
     }
 }
 
-struct CheckerboardView_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
+    NavigationStack {
         CheckerboardView()
     }
 }

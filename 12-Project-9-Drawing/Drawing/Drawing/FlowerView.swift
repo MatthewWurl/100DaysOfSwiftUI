@@ -13,7 +13,11 @@ struct Flower: Shape {
     
     func path(in rect: CGRect) -> Path {
         Path { path in
-            for number in stride(from: 0, to: Double.pi * 2, by: Double.pi / 8) {
+            for number in stride(
+                from: 0,
+                to: Double.pi * 2,
+                by: Double.pi / 8
+            ) {
                 let rotation = CGAffineTransform(rotationAngle: number)
                 let position = rotation.concatenating(
                     CGAffineTransform(translationX: rect.width / 2, y: rect.height / 2)
@@ -53,8 +57,8 @@ struct FlowerView: View {
     }
 }
 
-struct FlowerView_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
+    NavigationStack {
         FlowerView()
     }
 }

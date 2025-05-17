@@ -17,6 +17,6 @@ struct Habit: Codable, Equatable, Identifiable {
     
     // The Habit color is computed based on the colorString
     var color: Color? {
-        Color.habitColors.first(where: { $0.value == colorString })?.key
+        Color.habitColors.first { $0.value == colorString }?.key
     }
 }

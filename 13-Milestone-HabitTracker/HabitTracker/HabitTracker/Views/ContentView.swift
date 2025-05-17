@@ -8,46 +8,45 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var habitViewModel = HabitViewModel()
+    @StateObject var habitVM = HabitViewModel()
     @State private var isShowingAddHabit = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
-                ForEach(habitViewModel.habits) { habit in
+                ForEach(habitVM.habits) { habit in
                     NavigationLink {
                         HabitDetailView(
-                            habitViewModel: habitViewModel,
+                            habitVM: habitVM,
                             habit: habit
                         )
                     } label: {
-                        VStack(alignment: .leading) {
+                        HStack {
                             Text(habit.title)
-                                .foregroundColor(habit.color ?? .black)
+                                .font(.headline)
+                                .foregroundStyle(habit.color ?? .gray)
+                                .lineLimit(2)
                             
-                            Spacer(minLength: 10)
+                            Spacer(minLength: 40)
                             
-                            Text(
-                                habit.completionCount == 1 ?
-                                "1 completion to date." : "\(habit.completionCount) completions to date."
-                            )
-                                .font(.subheadline.italic())
-                            
+                            Text("^[\(habit.completionCount) completion](inflect: true)")
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
                         }
-                        .padding(.vertical, 5)
+                        .padding(.vertical, 10)
                     }
                 }
                 .onMove { indexSet, index in
-                    habitViewModel.habits.move(fromOffsets: indexSet, toOffset: index)
+                    habitVM.habits.move(fromOffsets: indexSet, toOffset: index)
                 }
                 .onDelete { offsets in
-                    habitViewModel.habits.remove(atOffsets: offsets)
+                    habitVM.habits.remove(atOffsets: offsets)
                 }
             }
             .navigationTitle("Habit Tracker")
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    if habitViewModel.habits.count > 0 {
+                    if habitVM.habits.count > 0 {
                         EditButton()
                     }
                     
@@ -59,14 +58,12 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $isShowingAddHabit) {
-                AddHabitView(habitViewModel: habitViewModel)
+                AddHabitView(habitVM: habitVM)
             }
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

@@ -15,10 +15,14 @@ extension Color {
             .orange: "Orange",
             .yellow: "Yellow",
             .green: "Green",
+            .mint: "Mint",
+            .teal: "Teal",
             .blue: "Blue",
             .indigo: "Indigo",
             .purple: "Purple",
             .pink: "Pink",
+            .gray: "Gray",
+            .brown: "Brown"
         ]
     }
 }

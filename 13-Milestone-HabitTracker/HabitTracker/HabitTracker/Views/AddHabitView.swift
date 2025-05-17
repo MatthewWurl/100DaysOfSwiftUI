@@ -8,24 +8,24 @@
 import SwiftUI
 
 struct AddHabitView: View {
-    @ObservedObject var habitViewModel: HabitViewModel
+    @ObservedObject var habitVM: HabitViewModel
     
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) private var dismiss
     
     @State private var title = ""
     @State private var description = ""
     @State private var color: Color = .blue
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
-                Section {
+                Section("Details") {
                     TextField("Habit title", text: $title)
                     
                     TextField("Habit description", text: $description)
                 }
                 
-                Section {
+                Section("Color") {
                     CustomColorPicker(selectedColor: $color)
                 }
             }
@@ -47,7 +47,7 @@ struct AddHabitView: View {
                             // not the computed color property.
                             colorString: Color.habitColors[color, default: nil]
                         )
-                        habitViewModel.habits.append(newHabit)
+                        habitVM.habits.append(newHabit)
                         
                         dismiss()
                     }
@@ -58,9 +58,6 @@ struct AddHabitView: View {
     }
 }
 
-struct AddHabitView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddHabitView(habitViewModel: HabitViewModel())
-            .preferredColorScheme(.dark)
-    }
+#Preview {
+    AddHabitView(habitVM: HabitViewModel())
 }

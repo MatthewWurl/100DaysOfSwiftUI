@@ -14,16 +14,17 @@ import SwiftUI
 struct CustomColorPicker: View {
     @Binding var selectedColor: Color
     
-    let colors: [Color] = [
+    private let colors: [Color] = [
         .red, .orange, .yellow, .green,
-        .blue, .indigo, .purple, .pink
+        .mint, .teal, .blue, .indigo,
+        .purple, .pink, .gray, .brown
+    ]
+    
+    private let columns = [
+        GridItem(.adaptive(minimum: 60)),
     ]
     
     var body: some View {
-        let columns = [
-            GridItem(.adaptive(minimum: 60)),
-        ]
-        
         LazyVGrid(columns: columns) {
             ForEach(colors, id: \.self) { color in
                 ZStack {
@@ -46,8 +47,11 @@ struct CustomColorPicker: View {
     }
 }
 
-struct CustomColorPicker_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomColorPicker(selectedColor: .constant(.blue))
-    }
+#Preview {
+    @Previewable @State var selectedColor = Color.blue
+    
+    CustomColorPicker(
+        selectedColor: $selectedColor
+    )
+    .padding()
 }

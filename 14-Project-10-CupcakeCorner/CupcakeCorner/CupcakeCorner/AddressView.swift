@@ -20,11 +20,10 @@ struct AddressView: View {
             }
             
             Section {
-                NavigationLink {
+                NavigationLink("Check out") {
                     CheckoutView(orderObject: orderObject)
-                } label: {
-                    Text("Check out")
                 }
+                .foregroundStyle(.blue)
             }
             .disabled(!orderObject.order.hasValidAddress)
         }
@@ -33,10 +32,10 @@ struct AddressView: View {
     }
 }
 
-struct AddressView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            AddressView(orderObject: OrderObject())
-        }
+#Preview {
+    NavigationStack {
+        AddressView(
+            orderObject: OrderObject()
+        )
     }
 }

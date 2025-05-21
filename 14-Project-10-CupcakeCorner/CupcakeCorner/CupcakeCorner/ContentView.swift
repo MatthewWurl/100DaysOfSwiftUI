@@ -11,23 +11,29 @@ struct ContentView: View {
     @StateObject var orderObject = OrderObject()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 Section {
-                    Picker("Select your cake type", selection: $orderObject.order.type) {
-                        ForEach(Order.types.indices) {
-                            Text(Order.types[$0])
+                    Picker(
+                        "Select your cake type",
+                        selection: $orderObject.order.type
+                    ) {
+                        ForEach(Order.types.indices, id: \.self) { index in
+                            Text(Order.types[index])
                         }
                     }
                     
-                    Stepper("Number of cakes: \(orderObject.order.quantity)",
-                            value: $orderObject.order.quantity, in: 3...20)
+                    Stepper(
+                        "Number of cakes: \(orderObject.order.quantity)",
+                        value: $orderObject.order.quantity,
+                        in: 3...20
+                    )
                 }
                 
                 Section {
                     Toggle("Any special requests?",
                            isOn: $orderObject.order.specialRequestEnabled
-                            .animation())
+                        .animation())
                     
                     if orderObject.order.specialRequestEnabled {
                         Toggle("Add extra frosting",
@@ -39,10 +45,8 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    NavigationLink {
+                    NavigationLink("Delivery details") {
                         AddressView(orderObject: orderObject)
-                    } label: {
-                        Text("Delivery details")
                     }
                 }
             }
@@ -51,8 +55,6 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

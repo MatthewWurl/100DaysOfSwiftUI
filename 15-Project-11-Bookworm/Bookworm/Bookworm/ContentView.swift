@@ -30,12 +30,12 @@ struct ContentView: View {
                             VStack(alignment: .leading) {
                                 Text(book.title ?? "Unknown Title")
                                     .font(.headline)
-                                    .foregroundColor(
+                                    .foregroundStyle(
                                         book.rating > 1 ? .primary : .red
                                     )
                                 
                                 Text(book.author ?? "Unknown Author")
-                                    .foregroundColor(.secondary)
+                                    .foregroundStyle(.secondary)
                             }
                         }
                     }
@@ -72,8 +72,6 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

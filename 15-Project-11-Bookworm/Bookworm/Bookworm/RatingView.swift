@@ -27,7 +27,7 @@ struct RatingView: View {
             
             ForEach(1..<maximumRating + 1, id: \.self) { number in
                 image(for: number)
-                    .foregroundColor(number > rating ? offColor : onColor)
+                    .foregroundStyle(number > rating ? offColor : onColor)
                     .onTapGesture {
                         rating = number
                     }
@@ -35,9 +35,7 @@ struct RatingView: View {
         }
         .accessibilityElement()
         .accessibilityLabel("Rating")
-        .accessibilityValue(
-            rating == 1 ? "1 star" : "\(rating) stars"
-        )
+        .accessibilityValue("^[\(rating) star](inflect: true)")
         .accessibilityAdjustableAction { direction in
             switch direction {
             case .increment:
@@ -63,8 +61,8 @@ struct RatingView: View {
     }
 }
 
-struct RatingView_Previews: PreviewProvider {
-    static var previews: some View {
-        RatingView(rating: .constant(4))
-    }
+#Preview {
+    @Previewable @State var rating = 3
+    
+    RatingView(rating: $rating)
 }

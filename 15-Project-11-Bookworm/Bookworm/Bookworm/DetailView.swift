@@ -15,8 +15,10 @@ struct DetailView: View {
     @State private var isShowingDeleteAlert = false
     
     var formattedDate: String {
-        book.date?.formatted(date: .abbreviated,
-                             time: .omitted) ?? "Unknown"
+        book.date?.formatted(
+            date: .abbreviated,
+            time: .omitted
+        ) ?? "Unknown"
     }
     
     var body: some View {
@@ -30,7 +32,7 @@ struct DetailView: View {
                     .font(.caption)
                     .fontWeight(.black)
                     .padding(8)
-                    .foregroundColor(.white)
+                    .foregroundStyle(.white)
                     .background(.black.opacity(0.75))
                     .clipShape(Capsule())
                     .offset(x: -5, y: -5)
@@ -38,7 +40,7 @@ struct DetailView: View {
             
             Text(book.author ?? "Unknown Author")
                 .font(.title)
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
             
             Text(book.review ?? "No review")
                 .italic()

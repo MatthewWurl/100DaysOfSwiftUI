@@ -19,8 +19,15 @@ struct AddBookView: View {
     
     @State private var isShowingAlert = false
     
-    let genres = ["Fantasy", "Horror", "Kids", "Mystery",
-                  "Poetry", "Romance", "Thriller"]
+    let genres = [
+        "Fantasy",
+        "Horror",
+        "Kids",
+        "Mystery",
+        "Poetry",
+        "Romance",
+        "Thriller"
+    ]
     
     var body: some View {
         NavigationView {
@@ -80,8 +87,6 @@ struct AddBookView: View {
     }
 }
 
-struct AddBookView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddBookView()
-    }
+#Preview {
+    AddBookView()
 }

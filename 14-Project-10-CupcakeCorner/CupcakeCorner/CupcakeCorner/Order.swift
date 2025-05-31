@@ -8,11 +8,7 @@
 import SwiftUI
 
 class OrderObject: ObservableObject {
-    @Published var order: Order
-    
-    init() {
-        order = Order()
-    }
+    @Published var order: Order = Order()
 }
 
 struct Order: Codable {

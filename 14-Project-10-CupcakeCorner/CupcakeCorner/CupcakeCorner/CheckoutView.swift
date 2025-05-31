@@ -14,12 +14,12 @@ struct CheckoutView: View {
     @State private var isShowingConfirmationMessage = false
     @State private var isShowingFailureMessage = false
     
-    let imageUrlString = "https://hws.dev/img/cupcakes@3x.jpg"
+    private let imageUrl = URL(string: "https://hws.dev/img/cupcakes@3x.jpg")
     
     var body: some View {
         ScrollView {
             VStack {
-                AsyncImage(url: URL(string: imageUrlString), scale: 3) { image in
+                AsyncImage(url: imageUrl, scale: 3) { image in
                     image
                         .resizable()
                         .scaledToFit()
@@ -38,7 +38,10 @@ struct CheckoutView: View {
                         await placeOrder()
                     }
                 }
-                .alert("Uh-oh, something went wrong!", isPresented: $isShowingFailureMessage) {
+                .alert(
+                    "Uh-oh, something went wrong!",
+                    isPresented: $isShowingFailureMessage
+                ) {
                     Button("OK") { }
                 } message: {
                     Text("Please check your internet connection or try again later.")
@@ -63,13 +66,18 @@ struct CheckoutView: View {
         let url = URL(string: "https://reqres.in/api/cupcakes")!
         var request = URLRequest(url: url)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        // This generic API key is necessary now...
+        request.setValue("reqres-free-v1", forHTTPHeaderField: "x-api-key")
         request.httpMethod = "POST"
         
         do {
-            let (data, _) = try await URLSession.shared.upload(for: request, from: encoded)
+            let (data, _) = try await URLSession.shared.upload(
+                for: request,
+                from: encoded
+            )
             
             let decodedOrder = try JSONDecoder().decode(Order.self, from: data)
-            confirmationMessage = "Your order for \(decodedOrder.quantity)x \(Order.types[decodedOrder.type].lowercased()) cupcakes is on its way!"
+            confirmationMessage = "Your order for \(decodedOrder.quantity)x \(Order.types[decodedOrder.type].lowercased()) cupcake(s) is on its way!"
             isShowingConfirmationMessage = true
         } catch {
             isShowingFailureMessage = true
@@ -77,10 +85,10 @@ struct CheckoutView: View {
     }
 }
 
-struct CheckoutView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            CheckoutView(orderObject: OrderObject())
-        }
+#Preview {
+    NavigationStack {
+        CheckoutView(
+            orderObject: OrderObject()
+        )
     }
 }

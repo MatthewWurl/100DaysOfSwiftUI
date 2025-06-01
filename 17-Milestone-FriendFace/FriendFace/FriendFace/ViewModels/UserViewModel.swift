@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 class UserViewModel: ObservableObject {
-    var users = [User]()
+    var users: [User] = []
     
     let urlString = "https://www.hackingwithswift.com/samples/friendface.json"
     
@@ -46,8 +46,10 @@ class UserViewModel: ObservableObject {
         task.resume()
     }
     
-    func updateUsersCache(with downloadedUsers: [User],
-                          context: NSManagedObjectContext) {
+    func updateUsersCache(
+        with downloadedUsers: [User],
+        context: NSManagedObjectContext
+    ) {
         for user in downloadedUsers {
             let cachedUser = CachedUser(context: context)
             cachedUser.id = user.id

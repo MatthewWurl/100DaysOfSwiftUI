@@ -16,7 +16,7 @@ struct ContentView: View {
     @StateObject var userViewModel = UserViewModel()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 List(cachedUsers) { cachedUser in
                     NavigationLink {

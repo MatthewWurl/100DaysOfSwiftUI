@@ -33,7 +33,7 @@ struct UserDetailView: View {
         List {
             Section("Status") {
                 Text(statusString)
-                    .foregroundColor(statusColor)
+                    .foregroundStyle(statusColor)
             }
             
             Section("Company") {
